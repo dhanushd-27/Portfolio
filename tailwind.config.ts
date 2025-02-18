@@ -49,6 +49,21 @@ export default {
         h6: "0.02em",
         p: "0.02em",
         button: "0.02em"
+      },
+      padding: {
+        30: '120px'
+      },
+      textColor: {
+        secondary_T_60: 'black/60'
+      },
+      backgroundColor: {
+        primary: 'white',
+        secondary: 'black',
+        secondary_T_60: 'black/60',
+        secondary_T_40: 'black/40'
+      },
+      borderWidth: {
+        3: '3px'
       }
     },
   },

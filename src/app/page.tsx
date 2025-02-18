@@ -1,12 +1,11 @@
-import PrimaryBtn from "@/components/PrimaryBtn";
-import SecondaryBtn from "@/components/SecondaryBtn";
+import Main from "@/components/Main";
+import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
-    <div>
-      <div>Hello world</div>
-      <PrimaryBtn BtnName="Get in Touch"></PrimaryBtn>
-      <SecondaryBtn BtnName="Github"></SecondaryBtn>
-    </div>
+    <main className="mx-[120px] flex flex-col justify-start items-center">
+      <Main />
+      <TechStack />
+    </main>
   );
 }

@@ -9,5 +9,5 @@ body {
 }
 
 .nav-option{
-  @apply text-h6 font-regular tracking-h6 
+  @apply text-h6/h6 font-regular tracking-h6 
 }
