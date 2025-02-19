@@ -56,7 +56,7 @@ export default function TechStack() {
       <div>
         {techStack.map((category) => (
           <div key={category.name} className='flex flex-col gap-4 px-16 py-8'>
-            <h5 className='text-h5/h5 tracking-h5 font-regular'>{category.name}</h5>
+            <h5 className='text-h5/h5 tracking-h5 font-regular border-b-2 border-solid  '>{category.name}</h5>
             <div className='flex flex-wrap px-8 gap-8 w-[625px]'>
               {category.items.map((item) => (
                 <div key={item.name} className='flex flex-col gap-1 justify-center items-center'>
