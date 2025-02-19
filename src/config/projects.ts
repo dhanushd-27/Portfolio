@@ -2,7 +2,7 @@ const projects = [
   {
     Date: "2023-01-01",
     Name: "Project One",
-    Description: "Description for Project One",
+    Description: "Description for Project",
     GithubLink: "#",
     LiveLink: "#",
     ProjectImage: "/Portfolio.png"
