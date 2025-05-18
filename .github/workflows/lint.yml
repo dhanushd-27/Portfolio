@@ -22,16 +22,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          version: 9
+          bun-version: 1.1.25
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install
 
       - name: Lint
-        run: pnpm lint
+        run: bun lint
     
       - name: Type check
-        run: pnpm tsc --noEmit
+        run: bun tsc --noEmit
