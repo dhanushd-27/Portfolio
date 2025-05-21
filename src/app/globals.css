@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+@layer base {
+  /* It is to change actual html elements */
+}
+
+@layer components {
+  /* Components are for reusable UI elements */
+  .box {
+    background-color: var(--color-bg-card);
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-surface-primary);
+    padding: 1rem;
+  }
+
+  .text-default {
+    color: var(--color-text-default);
+  }
+}
+
+@layer utilities {
+  /*  Utilities are for single purpose use case such as border-radius, margin, padding, etc. */
+}
+
+@theme {
+  /* Base colors */
+  --color-bg-dark: rgba(9, 9, 9, 1);
+  --color-bg-card: rgba(20, 20, 20, 1);
+  --color-bg-hover: rgba(31, 31, 31, 1);
+  
+  /* Surface colors */
+  --color-surface-primary: rgba(36, 36, 36, 1);
+  --color-surface-secondary: rgba(31, 31, 31, 1);
+  
+  /* Text colors */
+  --color-text-muted: rgba(102, 102, 102, 1);
+  --color-text-default: rgba(204, 204, 204, 1);
+  
+  /* Accent colors */
+  --color-accent-light: rgba(172, 172, 172, 1);
+  --color-accent-white: rgba(255, 255, 255, 1);
+  --color-accent-cursor: rgba(255, 255, 255, 0.24);
+
+  /* Legacy color variables - to be removed after migration */
+  /*
+  --color-background: rgba(9, 9, 9, 1);
+  --color-primary: rgba(20, 20, 20, 1);
+  --color-primary-hover: rgba(31, 31, 31, 1);
+  --color-secondary: rgba(36, 36, 36, 1);
+  --color-tertiary: rgba(31, 31, 31, 1);
+  --color-text-secondary: rgba(102, 102, 102, 1);
+  --color-text-primary: rgba(204, 204, 204, 1);
+  --color-quaternary: rgba(172, 172, 172, 1);
+  --color-logo: rgba(255, 255, 255, 1);
+  --color-cursor: rgba(255, 255, 255, 0.24);
+  */
+}
