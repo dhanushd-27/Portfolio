@@ -36,14 +36,12 @@ export default function Cursor({ className }: { className?: string }) {
 
   return (
     <div 
-      className='fixed pointer-events-none z-[9999]'
+      className={`fixed z-[9999] circle ${className}`}
       style={{ 
         left: position.x, 
         top: position.y,
-        transform: 'translate(-50%, -50%)'
       }}
-    >
-      <div className={`circle ${className || ''}`}></div>
+      >
     </div>
   )
 }
