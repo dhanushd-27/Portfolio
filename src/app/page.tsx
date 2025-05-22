@@ -15,6 +15,8 @@ export default function Home() {
     getRandomQuote().then(setQuote)
   }, [])
 
+  // Separate them to indiviual Components
+
   return (
     <>
       <div className="bg-bg-dark h-screen flex justify-center items-center p-24">
@@ -28,9 +30,9 @@ export default function Home() {
           <div className='box col-start-4 col-end-7 row-start-7 row-end-11'>
             <p className='text-default'>Links</p>
           </div>
-          <div className='box col-start-4 col-end-10 row-start-11 row-end-13 flex flex-col justify-center items-center'>
-            <p className='text-default'>{quote?.quote}</p>
-            <p className='text-default'>- {quote?.author}</p>
+          <div className='box col-start-4 col-end-10 row-start-11 row-end-13'>
+              <p className='text-default text-start'>{quote?.quote}</p>
+              <p className='text-default text-end'>- {quote?.author}</p>
           </div>
           <div className='box col-start-6 col-end-10 row-start-1 row-end-7'>
             <p className='text-default'>About me</p>
