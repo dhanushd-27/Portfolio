@@ -2,6 +2,9 @@
 
 @layer base {
   /* It is to change actual html elements */
+  * {
+    cursor: none !important;
+  }
 }
 
 @layer components {
@@ -21,6 +24,9 @@
 @layer utilities {
   /*  Utilities are for single purpose use case such as border-radius, margin, padding, etc. */
   
+  .circle {
+    @apply h-5 w-5 bg-accent-cursor rounded-full absolute z-999 cursor-none;
+  }
 }
 
 @theme {
