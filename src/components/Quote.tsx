@@ -1,0 +1,25 @@
+"use client"
+
+import React, { useEffect, useState } from 'react'
+import { getRandomQuote } from '@/actions/getRandomQuote'
+
+type Quote = {
+  quote: string
+  author: string
+}
+
+export default function Quote() {
+  const [quote, setQuote] = useState<Quote>()
+
+  useEffect(() => {
+    getRandomQuote().then(setQuote)
+  }, [])
+
+
+  return (
+    <div className='box col-start-4 col-end-10 row-start-11 row-end-13 overflow-auto gap-1 group hover:cursor-pointer'>
+          <p className='text-default text-start group-hover:blur-none blur-xs transition-all duration-300'>{quote?.quote}</p>
+          <p className='text-default text-end group-hover:blur-none blur-xs transition-all duration-300'>- {quote?.author}</p>
+    </div>
+  )
+}
