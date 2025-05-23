@@ -14,16 +14,24 @@
     background-color: var(--color-bg-card);
     border-radius: 0.5rem;
     border: 1px solid var(--color-surface-primary);
-    padding: 1.5rem;
+    padding: 15px 20px;
     transition: background-color 0.3s ease-in-out;
   }
-/* 
+
+  .box-nohover {
+    font-family: "DMSans";
+    background-color: var(--color-bg-card);
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-surface-primary);
+    padding: 15px 20px;
+  }
+
   .background-noise {
     background-image: url("../assets/noise-light.png");
     background-size: cover;
     opacity: 0.02;
     z-index: 1000;
-  } */
+  }
 
   .box:hover {
     background-color: var(--color-bg-hover);
@@ -41,6 +49,9 @@
     @apply h-5 w-5 bg-accent-cursor rounded-full absolute z-999 cursor-none;
   }
 
+  .header {
+    @apply tracking-widest uppercase text-[var(--color-text-muted)];
+  }
 }
 
 @theme {
