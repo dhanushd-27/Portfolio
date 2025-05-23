@@ -1,6 +1,6 @@
 
 import Quote from "@/components/Quote"
-import Techstack from "@/components/Techstack"
+import Techstack from "@/components/TechStack/Techstack"
 import Profile from "@/components/Profile"
 import Links from "@/components/Links"
 import About from "@/components/About"
