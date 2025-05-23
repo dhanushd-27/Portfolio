@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-bg-dark h-screen flex justify-center items-center p-24">
+      <div className="noise bg-bg-dark h-screen flex justify-center items-center p-5">
         <div className='grid grid-cols-12 grid-rows-12 gap-5 w-full h-full'>
           <Techstack />
           <Profile />
