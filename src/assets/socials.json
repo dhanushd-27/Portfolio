@@ -1,0 +1,27 @@
+{
+  "discord": {
+    "name": "discord",
+    "logo": "/discord.svg",
+    "link": "https://discord.com/users/yourusername"
+  },
+  "github": {
+    "name": "github",
+    "logo": "/github.svg", 
+    "link": "https://github.com/yourusername"
+  },
+  "linkedin": {
+    "name": "linkedin",
+    "logo": "/linkedin.svg",
+    "link": "https://linkedin.com/in/yourusername"
+  },
+  "peerlist": {
+    "name": "peerlist",
+    "logo": "/peerlist.svg",
+    "link": "https://peerlist.io/yourusername"
+  },
+  "x": {
+    "name": "x",
+    "logo": "/x.svg",
+    "link": "https://x.com/yourusername"
+  }
+}

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 export default function Cursor({ className }: { className?: string }) {
   const [position, setPosition] = useState<{ x: number | null, y: number | null }>({ x: null, y: null });
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
