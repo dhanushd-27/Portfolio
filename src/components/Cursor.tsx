@@ -39,7 +39,7 @@ export default function Cursor({ className }: { className?: string }) {
       className={`fixed z-[9999] circle ${className}`}
       style={{ 
         left: position.x, 
-        top: position.y,
+        top: position.y
       }}
       >
     </div>

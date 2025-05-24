@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Profile() {
   return (
-    <div className='box-nohover col-start-4 col-end-6 row-start-1 row-end-7 flex flex-col gap-2 items-start justify-center'>
+    <div className='box col-start-4 col-end-6 row-start-1 row-end-7 flex flex-col gap-2 items-start justify-center'>
       <div className='bg-surface-primary rounded-full text-xs px-2 text-center text-default flex items-center justify-center hover:bg-surface-secondary transition-colors duration-300 ease-in-out w-max'>
         {/* Add Animation here, like a loader and then available to work shows up */}
         <p>Available for work</p>

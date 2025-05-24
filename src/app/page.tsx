@@ -4,7 +4,7 @@ import Profile from "@/components/Profile"
 import Links from "@/components/Socials/Socials"
 import About from "@/components/About"
 import Photos from "@/components/Photos"
-import Projects from "@/components/Projects"
+import Projects from "@/components/Projects/Projects"
 import CopyMail from "@/components/CopyMail"
 import React from "react"
 

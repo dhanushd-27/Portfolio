@@ -1,0 +1,34 @@
+[
+  {
+    "title": "DoodleBoard",
+    "description": "A collaborative whiteboard app for real-time drawing and brainstorming. Built with Next.js, Node.js, and WebSockets for live updates. Features secure rooms, drawing tools, and a clean UI.",
+    "repo": "https://github.com/dhanushd-27/DoodleBoard",
+    "link": "#",
+    "demo": "https://www.youtube.com/watch?v=_wCudrVCKjE",
+    "deployed": false
+  },
+  {
+    "title": "MemoBrain",
+    "description": "A resource organizer for saving and sharing links, docs, tweets, and videos. Built with Next.js, Prisma, PostgreSQL, and Docker. Public sharing with no login required.",
+    "repo": "https://github.com/dhanushd-27/MemoBrain",
+    "link": "https://memobrain.dhanushd.me/",
+    "demo": "#",
+    "deployed": true
+  },
+  {
+    "title": "Civio",
+    "description": "A Framer Community template made with Next.js, Tailwind CSS, Framer Motion, and TypeScript. Features smooth animations, custom 404, and responsive layout.",
+    "repo": "https://github.com/dhanushd-27/Civio",
+    "link": "https://civio.dhanushd.me/",
+    "demo": "#",
+    "deployed": true
+  },
+  {
+    "title": "Milestone X",
+    "description": "A responsive web app built in a day using Next.js, Tailwind CSS, and Framer Motion. Mobile-first design with animations. Based on a Framer template and deployed on Vercel.",
+    "repo": "https://github.com/dhanushd-27/MilestoneX",
+    "link": "https://milestone-x.dhanushd.me/",
+    "demo": "#",
+    "deployed": true
+  }
+]

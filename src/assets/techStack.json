@@ -5,24 +5,28 @@
       "items": ["TypeScript", "JavaScript", "HTML & CSS", "SQL", "C++"]
     },
     {
-      "title": "Frameworks & Runtime",
-      "items": ["Next.js", "React", "Node.js", "Express", "Astro"]
-    },
-    {
-      "title": "Libraries & UI Tools",
-      "items": ["Redux Toolkit", "TanStack React Query", "Prisma ORM", "Drizzle ORM", "JWT", "Bcrypt", "Zod", "shadcn/ui", "motion.dev"]
-    },
-    {
-      "title": "Developer Tools",
-      "items": ["Git & GitHub", "Visual Studio Code", "Cursor", "Chat GPT"]
-    },
-    {
       "title": "DevOps & Deployment",
       "items": ["Docker", "CI/CD", "Azure", "Github Actions", "Linux Command Line"]
     },
     {
       "title": "Communication Protocols",
       "items": ["WebSockets"]
+    },
+    {
+      "title": "Database",
+      "items": ["PostgreSQL", "MongoDB"]
+    },
+    {
+      "title": "Frameworks & Runtime",
+      "items": ["Next.js", "React", "Node.js", "Express", "Astro", "Tailwind CSS"]
+    },
+    {
+      "title": "Libraries & UI Tools",
+      "items": ["Redux Toolkit", "TanStack React Query", "Prisma ORM", "Drizzle ORM", "JWT", "argon2", "Zod", "shadcn/ui", "motion.dev", "SSH"]
+    },
+    {
+      "title": "Developer Tools",
+      "items": ["Git & GitHub", "Visual Studio Code", "Cursor", "Chat GPT"]
     }
   ]
 } 
