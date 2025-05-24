@@ -18,7 +18,7 @@
     },
     {
       "title": "DevOps & Deployment",
-      "items": ["Docker", "CI/CD", "Linux Command Line"]
+      "items": ["Docker", "CI/CD", "Azure", "Github Actions", "Linux Command Line"]
     },
     {
       "title": "Communication Protocols",
