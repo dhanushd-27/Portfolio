@@ -11,7 +11,7 @@ export default function Profile() {
           <Image src={'/available.gif'} height={20} width={20} alt='Available for work' unoptimized={true}/>
         </div>
         <div className="w-full flex items-center justify-center">
-          <div className='relative w-[219.66px] h-[210px]'>
+          <div className='relative w-11/12 h-[210px]'>
             <Image src={'/profile-pfp.jpg'} alt='Profile Picture' fill className='rounded-lg'/>
           </div>
         </div>
