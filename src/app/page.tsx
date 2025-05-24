@@ -6,12 +6,9 @@ import About from "@/components/About"
 import Photos from "@/components/Photos"
 import Projects from "@/components/Projects"
 import CopyMail from "@/components/CopyMail"
-import Chase from "@/components/Agents/Chase"
 import React from "react"
 
 export default function Home() {
-
-  // Separate them to indiviual Components
 
   return (
     <>
@@ -24,7 +21,6 @@ export default function Home() {
           <Photos />
           <Projects />
           <CopyMail />
-          <Chase />
           <Quote />
         </div>
       </div>
