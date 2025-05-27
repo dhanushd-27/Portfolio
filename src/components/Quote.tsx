@@ -27,7 +27,7 @@ export default function Quote() {
   }
 
   return (
-    <div className='box box-hover col-start-4 col-end-10 row-start-11 row-end-13 overflow-auto gap-1 group'>
+    <div className='box box-hover col-start-4 col-end-10 row-start-11 row-end-13 overflow-auto gap-1 group hide-scrollbar'>
         <p className='text-default text-start group-hover:blur-none blur-xs transition-all duration-300'>{quote?.quote}</p>
         <p className='text-default text-end group-hover:blur-none blur-xs transition-all duration-300'>- {quote?.author}</p>
     </div>
