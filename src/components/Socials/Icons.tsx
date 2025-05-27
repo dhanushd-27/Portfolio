@@ -17,7 +17,7 @@ export default function Icons({ name, logo, link }: { name: string, logo: string
   const hoverClass = bgColors[socialName] || '';
 
   return (
-    <button className={`flex items-center justify-center p-4 bg-surface-primary rounded-lg ${hoverClass} transition-colors duration-300 ease-in-out`}>
+    <button className={`flex items-center justify-center p-3 bg-surface-primary rounded-lg ${hoverClass} transition-colors duration-300 ease-in-out`}>
       <Link
         href={link} 
         target='_blank'

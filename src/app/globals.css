@@ -18,11 +18,18 @@
     transition: background-color 0.3s ease-in-out;
   }
 
-  .background-noise {
-    background-image: url("../assets/noise-light.png");
-    background-size: cover;
-    opacity: 0.02;
-    z-index: 1000;
+  .box-light {
+    font-family: "DMSans";
+    background-color: var(--color-bg-light-card);
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-light-border);
+    padding: 15px 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .box-light-hover:hover {
+    background-color: var(--color-bg-light-hover);
+    transition: background-color 0.3s ease-in-out;
   }
 
   .box-hover:hover {
@@ -71,6 +78,10 @@
   --color-bg-dark: rgba(9, 9, 9, 1);
   --color-bg-card: rgba(20, 20, 20, 1);
   --color-bg-hover: rgba(31, 31, 31, 1);
+  --color-bg-light: rgb(244, 245, 246);
+  --color-bg-light-card: rgb(255, 255, 255);
+  --color-light-border: rgb(216, 219, 222);
+
   
   /* Surface colors */
   --color-surface-primary: rgba(36, 36, 36, 1);
@@ -79,6 +90,8 @@
   /* Text colors */
   --color-text-muted: rgba(102, 102, 102, 1);
   --color-text-default: rgba(204, 204, 204, 1);
+  --color-text-light-muted:  rgb(138, 148, 158);
+  --color-text-light-default: rgb(31, 31, 31);
 
   /* Accent colors */
   --color-accent-light: rgba(172, 172, 172, 1);
