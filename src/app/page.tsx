@@ -1,6 +1,6 @@
 import Quote from "@/components/Quote"
 import Techstack from "@/components/TechStack/Techstack"
-import Profile from "@/components/Profile"
+import Profile from "@/components/Profile/Profile"
 import Links from "@/components/Socials/Socials"
 import About from "@/components/About"
 import Photos from "@/components/Photos"

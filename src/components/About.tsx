@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className='box col-start-6 col-end-10 row-start-1 row-end-7 flex flex-col gap-6 relative'>
       <p className='header'>About</p>
-      <div className='text-text-default tracking-wide text-sm leading-6 text-justify px-4 flex flex-col gap-1 overflow-y-auto hide-scrollbar relative'>
+      <div className='text-text-default tracking-wide text-sm leading-6 text-justify px-4 flex flex-col gap-1 overflow-y-auto hide-scrollbar h-full'>
         <p>
           I&apos;m a 21-year-old Computer Science graduate from Sai Vidya Institute of Technology, Bengaluru (class of 2025), with a strong interest in <span className='text-accent-white underline'>Web development and DevOps</span>.
         </p>
