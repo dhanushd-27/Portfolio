@@ -4,7 +4,7 @@ import projects from '@/assets/projects.json';
 
 export default function Projects() {
   return (
-    <div className='hidden box col-start-10 col-end-13 row-start-1 row-end-10 lg:flex flex-col gap-6 relative'>
+    <div className='box projects-container'>
       <p className='header'>Projects</p>
       <div className='flex flex-col gap-8 overflow-y-auto hide-scrollbar'>
         {projects.map((project, index) => (

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='box col-start-6 col-end-10 row-start-1 row-end-7 flex flex-col gap-6 relative'>
+    <div className='box about-container'>
       <p className='header'>About</p>
       <div className='text-text-default tracking-wide text-sm leading-6 text-justify px-4 flex flex-col gap-1 overflow-y-auto hide-scrollbar h-full'>
         <p>

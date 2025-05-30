@@ -83,6 +83,62 @@
       @apply grid grid-cols-12 grid-rows-12 w-full h-full gap-5;
     }
   }
+
+  .profile-container {
+    @apply col-start-4 col-end-6 row-start-1 row-end-6 flex items-center justify-center relative;
+
+    @media (min-width: 1288px) {
+      @apply col-start-4 col-end-6 row-start-1 row-end-6 flex items-center justify-center relative;
+    }
+  }
+
+  .profile-content {
+    @apply flex flex-col gap-4 items-center justify-start;
+
+    @media (min-width: 1288px) {
+      @apply flex flex-col gap-4 items-center justify-start;
+    }
+  }
+
+  .projects-container {
+    @apply col-start-10 col-end-13 row-start-1 row-end-10 flex flex-col gap-6 relative;
+
+    @media (min-width: 1288px) {
+      @apply col-start-10 col-end-13 row-start-1 row-end-10 flex flex-col gap-6 relative;
+    }
+  }
+
+  .socials-container {
+    @apply col-start-4 col-end-6 row-start-6 row-end-9 flex flex-col gap-6 w-full;
+
+    @media (min-width: 1288px) {
+      @apply col-start-4 col-end-6 row-start-6 row-end-9 flex flex-col gap-6 w-full;
+    }
+  }
+
+  .techstack-container {
+    @apply col-start-1 col-end-4 row-start-1 row-end-13 overflow-auto flex flex-col gap-6 relative;
+
+    @media (min-width: 1288px) {
+      @apply col-start-1 col-end-4 row-start-1 row-end-13 overflow-auto flex flex-col gap-6 relative;
+    }
+  }
+
+  .about-container {
+    @apply col-start-6 col-end-10 row-start-1 row-end-7 flex flex-col gap-6 relative;
+
+    @media (min-width: 1288px) {
+      @apply col-start-6 col-end-10 row-start-1 row-end-7 flex flex-col gap-6 relative;
+    }
+  }
+
+  .copy-mail-container {
+    @apply col-start-10 col-end-13 row-start-10 row-end-13 overflow-y-auto;
+
+    @media (min-width: 1288px) {
+      @apply col-start-10 col-end-13 row-start-10 row-end-13 overflow-y-auto;
+    }
+  }
 }
 
 @theme {

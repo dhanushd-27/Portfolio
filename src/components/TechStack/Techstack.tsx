@@ -4,7 +4,7 @@ import techStackData from '@/assets/techStack.json'
 
 export default function Techstack() {
   return (
-    <div className='box col-start-1 col-end-4 row-start-1 row-end-13 overflow-auto flex flex-col gap-6 relative'>
+    <div className='box techstack-container'>
       <h3 className='header'>Tech Stack</h3>
       <div className='flex flex-col gap-2 hide-scrollbar overflow-y-auto'>
         {techStackData.categories.map((category) => (

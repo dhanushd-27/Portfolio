@@ -5,8 +5,8 @@ import TextDetails from './TextDetails'
 
 export default function Profile() {
   return (
-    <div className='box col-start-4 col-end-6 row-start-1 row-end-6 flex items-center justify-center relative'>
-      <div className='w-full h-11/12 flex flex-col gap-4 items-center justify-start hide-scrollbar overflow-y-auto'>
+    <div className='box profile-container'>
+      <div className='w-full h-11/12 hide-scrollbar overflow-y-auto profile-content'>
         <AvailableForWork />
         <Image src={'/profile-pfp.jpg'} alt='Profile Picture' height={200} width={200} className='rounded-lg'/>
         <TextDetails />

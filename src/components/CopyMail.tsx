@@ -15,7 +15,7 @@ export default function CopyMail() {
   }
 
   return (
-    <div className='box col-start-10 col-end-13 row-start-10 row-end-13 hide-scrollbar overflow-y-auto' onClick={handleCopy}>
+    <div className='box copy-mail-container hide-scrollbar' onClick={handleCopy}>
       <h3 className='text-default text-lg pt-5 pb-2'>Got Ideas? Let&apos;s Collaborate</h3>
       {
         isCopied ? (

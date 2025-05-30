@@ -4,7 +4,7 @@ import socials from '@/assets/socials.json'
 
 export default function Links() {
   return (
-    <div className='box col-start-4 col-end-6 row-start-6 row-end-9 flex flex-col gap-6 w-full'>
+    <div className='box socials-container'>
       <p className='header'>Find me on</p>
       <div className='flex flex-wrap w-full px-2 gap-4 items-start justify-between hide-scrollbar overflow-y-auto'>
         <Icons name={ socials.x.name } logo={ socials.x.logo } link={ socials.x.link } />
