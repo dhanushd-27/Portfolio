@@ -10,6 +10,7 @@ export default function Profile() {
         <AvailableForWork />
         <Image src={'/profile-pfp.jpg'} alt='Profile Picture' height={200} width={200} className='rounded-lg'/>
         <TextDetails />
+        <div className='pb-3'></div>
       </div>
       <div className='pointer-events-none absolute bottom-0 left-0 w-full h-15 bg-gradient-to-b from-transparent to-bg-card'></div>
     </div>

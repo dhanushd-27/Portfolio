@@ -74,6 +74,8 @@
 }
 
 @theme {
+  --breakpoint-lg: 1288px;
+
   /* Base colors */
   --color-bg-dark: rgba(9, 9, 9, 1);
   --color-bg-card: rgba(20, 20, 20, 1);
