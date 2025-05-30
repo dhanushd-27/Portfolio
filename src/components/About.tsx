@@ -21,7 +21,7 @@ export default function About() {
           You can find my projects and contributions on my <a href="https://github.com/dhanushd-27" className="text-accent-white hover:underline">GitHub</a>.
         </p>
       </div>
-      <div className='pointer-events-none absolute bottom-0 left-0 w-full h-15 bg-gradient-to-b from-transparent to-bg-card'></div>
+      <div className='hidden lg:block pointer-events-none absolute bottom-0 left-0 w-full h-15 bg-gradient-to-b from-transparent to-bg-card'></div>
     </div>
   )
 }

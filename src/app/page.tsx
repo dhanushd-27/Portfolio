@@ -14,15 +14,15 @@ export default function Home() {
   return (
     <>
       <div className="bg-bg-dark flex lg:h-screen justify-center items-center p-5">
-        <div className='flex flex-col gap-2 lg:grid grid-cols-12 grid-rows-12 lg-gap-5 w-full h-full'>
-          <Techstack />
+        <div className='flex flex-col gap-5 lg:grid grid-cols-12 grid-rows-12 lg:gap-5 w-full h-full'>
           <Profile />
-          <Links />
-          <Switch />
           <About />
-          <Photos />
+          <Techstack />
           <Projects />
           <CopyMail />
+          <Links />
+          <Switch />
+          <Photos />
           <Quote />
         </div>
       </div>
