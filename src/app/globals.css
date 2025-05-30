@@ -72,7 +72,17 @@
     display: none; /* Chrome, Safari, Opera */
   }
 
-  
+  .screen {
+    @apply flex flex-col gap-5;
+    
+    @media (min-width: 640px) {
+      @apply grid grid-cols-8 grid-rows-8 gap-5;
+    }
+
+    @media (min-width: 1288px) {
+      @apply grid grid-cols-12 grid-rows-12 w-full h-full gap-5;
+    }
+  }
 }
 
 @theme {
