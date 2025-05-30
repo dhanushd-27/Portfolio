@@ -76,7 +76,7 @@
     @apply flex flex-col gap-5;
     
     @media (min-width: 640px) {
-      @apply grid grid-cols-8 grid-rows-8 gap-5;
+      @apply grid grid-cols-8 gap-5 h-min;
     }
 
     @media (min-width: 1288px) {
@@ -85,7 +85,11 @@
   }
 
   .profile-container {
-    @apply col-start-4 col-end-6 row-start-1 row-end-6 flex items-center justify-center relative;
+    @apply flex items-center justify-center relative;
+
+    @media (min-width: 640px) {
+      @apply col-start-1 col-end-4 row-start-1 row-end-3;
+    }
 
     @media (min-width: 1288px) {
       @apply col-start-4 col-end-6 row-start-1 row-end-6 flex items-center justify-center relative;
@@ -101,15 +105,23 @@
   }
 
   .projects-container {
-    @apply col-start-10 col-end-13 row-start-1 row-end-10 flex flex-col gap-6 relative;
+    @apply flex flex-col gap-6 relative;
+
+    @media (min-width: 640px) {
+      @apply col-start-4 col-end-9 row-start-3;
+    }
 
     @media (min-width: 1288px) {
-      @apply col-start-10 col-end-13 row-start-1 row-end-10 flex flex-col gap-6 relative;
+      @apply col-start-10 col-end-13 row-start-1 row-end-10 flex flex-col gap-6 relative h-full;
     }
   }
 
   .socials-container {
-    @apply col-start-4 col-end-6 row-start-6 row-end-9 flex flex-col gap-6 w-full;
+    @apply flex flex-col gap-6 w-full;
+
+    @media (min-width: 640px) {
+      @apply col-start-4 col-end-7 row-start-4 row-end-6;
+    }
 
     @media (min-width: 1288px) {
       @apply col-start-4 col-end-6 row-start-6 row-end-9 flex flex-col gap-6 w-full;
@@ -117,15 +129,23 @@
   }
 
   .techstack-container {
-    @apply col-start-1 col-end-4 row-start-1 row-end-13 overflow-auto flex flex-col gap-6 relative;
+    @apply overflow-auto flex flex-col gap-6 relative;
+
+    @media (min-width: 640px) {
+      @apply col-start-1 col-end-4 row-start-3 row-end-6;
+    }
 
     @media (min-width: 1288px) {
-      @apply col-start-1 col-end-4 row-start-1 row-end-13 overflow-auto flex flex-col gap-6 relative;
+      @apply col-start-1 col-end-4 row-start-1 row-end-13 overflow-auto flex flex-col gap-6 relative h-full;
     }
   }
 
   .about-container {
-    @apply col-start-6 col-end-10 row-start-1 row-end-7 flex flex-col gap-6 relative;
+    @apply flex flex-col gap-6 relative;
+
+    @media (min-width: 640px) {
+      @apply col-start-4 col-end-9 row-start-1 row-end-3;
+    }
 
     @media (min-width: 1288px) {
       @apply col-start-6 col-end-10 row-start-1 row-end-7 flex flex-col gap-6 relative;
@@ -133,10 +153,14 @@
   }
 
   .copy-mail-container {
-    @apply col-start-10 col-end-13 row-start-10 row-end-13 overflow-y-auto;
+    @apply overflow-y-auto;
+
+    @media (min-width: 640px) {
+      @apply col-start-7 col-end-9 row-start-4 row-end-6 h-max;
+    }
 
     @media (min-width: 1288px) {
-      @apply col-start-10 col-end-13 row-start-10 row-end-13 overflow-y-auto;
+      @apply col-start-10 col-end-13 row-start-10 row-end-13 overflow-y-auto h-full;
     }
   }
 }
