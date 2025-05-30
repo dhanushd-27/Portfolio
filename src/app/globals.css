@@ -71,10 +71,13 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+
+  
 }
 
 @theme {
   --breakpoint-lg: 1288px;
+  --breakpoint-xs: 414px;
 
   /* Base colors */
   --color-bg-dark: rgba(9, 9, 9, 1);
