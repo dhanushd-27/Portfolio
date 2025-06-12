@@ -15,16 +15,16 @@ export default function CopyMail() {
   }
 
   return (
-    <div className='box copy-mail-container hide-scrollbar' onClick={handleCopy}>
-      <h3 className='text-default text-lg pt-5 pb-2'>Got Ideas? Let&apos;s Collaborate</h3>
+    <div className='box copy-mail-container hide-scrollbar h-full flex flex-col items-start justify-center' onClick={handleCopy}>
+      <h3 className='text-default text-lg pb-2'>Got Ideas? Let&apos;s Collaborate</h3>
       {
         isCopied ? (
-          <div className='bg-surface-primary p-4 rounded-lg text-center text-default flex gap-2 items-center justify-center hover:bg-surface-secondary transition-colors duration-300 ease-in-out'>
+          <div className='bg-surface-primary p-4 rounded-lg text-center text-default flex gap-2 items-center justify-center hover:bg-surface-secondary transition-colors duration-300 ease-in-out w-full'>
             <p>Copied!</p>
             <MdDone className='text-default'/>
           </div>
         ) : (
-          <div className='bg-surface-primary p-4 rounded-lg text-center text-default flex gap-2 items-center justify-center hover:bg-surface-secondary transition-colors duration-300 ease-in-out'> 
+          <div className='bg-surface-primary p-4 rounded-lg text-center text-default flex gap-2 items-center justify-center hover:bg-surface-secondary transition-colors duration-300 ease-in-out w-full'> 
             <p>Copy email</p>
             <MdContentCopy className='text-default'/>
           </div>
