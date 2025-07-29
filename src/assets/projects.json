@@ -12,7 +12,7 @@
     "description": "A resource organizer for saving and sharing links, docs, tweets, and videos. Built with Next.js, Prisma, PostgreSQL, and Docker. Public sharing with no login required.",
     "repo": "https://github.com/dhanushd-27/MemoBrain",
     "link": "https://memobrain.dhanushd.me/",
-    "demo": "#",
+    "demo": "https://github.com/dhanushd-27/MemoBrain",
     "deployed": false
   },
   {
