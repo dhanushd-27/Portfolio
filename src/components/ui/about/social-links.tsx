@@ -1,27 +1,23 @@
-import Link from 'next/link'
-import React from 'react'
+import React from "react";
+import ExternalLink from "@/components/common/external-link";
+
+import socials from "@/assets/socials.json";
 
 export default function SocialLinks() {
-  const links = [
-    { href: 'https://github.com/dhanushd-27', label: 'Github' },
-    { href: 'https://www.linkedin.com/in/dhanush27/', label: 'LinkedIn' },
-    { href: 'https://x.com/orcatwt', label: 'X' },
-  ]
+  const displaySocials = [socials.github, socials.linkedin, socials.x];
 
   return (
     <div className="flex gap-4 h-full items-center justify-start sm:justify-center pr-2 underline">
-      {links.map((link) => (
-        <Link
-          key={link.label}
-          href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={link.label}
-          className="text-xs md:text-sm opacity transition-colors hover:text-gray-600"
+      {displaySocials.map((social) => (
+        <ExternalLink
+          key={social.name}
+          href={social.link}
+          label={social.name}
+          className="text-xs md:text-sm transition-colors hover:text-text-primary"
         >
-          {link.label}
-        </Link>
+          {social.name}
+        </ExternalLink>
       ))}
     </div>
-  )
+  );
 }

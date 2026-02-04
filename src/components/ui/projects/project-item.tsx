@@ -10,6 +10,7 @@ import {
   TbPlayerPlay,
 } from "react-icons/tb";
 import { cn } from "@/lib/utils";
+import Separator from "@/components/common/separator";
 
 interface ProjectItemProps {
   projectName: string;
@@ -85,6 +86,7 @@ export default function ProjectItem({
         toggleLabelClosed="Project Details"
       >
         <div className="flex flex-col gap-4">
+          <Separator className="mt-2" />
           <div className="pt-2">
             <h4 className="text-xs font-bold uppercase tracking-widest text-text-muted/60 mb-2">
               Key Features
@@ -97,8 +99,6 @@ export default function ProjectItem({
               <Badge key={tech}>{tech}</Badge>
             ))}
           </div>
-
-          <div className="w-full h-px bg-border/50"></div>
         </div>
       </ExpandableItemWrapper>
     </div>

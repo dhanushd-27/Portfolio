@@ -5,6 +5,8 @@ import { prisma } from "@/lib/prisma";
 import Experience from "@/components/ui/experience/experience";
 import Projects from "@/components/ui/projects/projects";
 import Skills from "@/components/ui/skills/skills";
+import Connect from "@/components/ui/connect/connect";
+import Footer from "@/components/ui/footer/footer";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +27,10 @@ export default async function Home() {
           <Experience />
           <Projects />
           <Skills />
+          <div>
+            <Connect />
+            <Footer />
+          </div>
         </section>
       </div>
       <Border side="right" />

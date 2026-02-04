@@ -13,11 +13,11 @@
   "Backend": [
     "Node.js",
     "Express.js",
-    "Echo (Go)",
     "JWT",
     "Bcrypt",
-    "Google OAuth"
+    "Google OAuth",
+    "Echo (Go)"
   ],
-  "DevOps": ["AWS", "Docker", "Nginx", "GitHub Actions (CI/CD)", "Vercel"],
+  "DevOps": ["Docker", "GitHub Actions (CI/CD)", "Vercel"],
   "Databases, ORMs & Tools": ["PostgreSQL", "Prisma", "Drizzle", "Git", "GitHub", "Turborepo", "Bun", "Postman", "VS Code", "Antigravity", "Cursor"]
 }

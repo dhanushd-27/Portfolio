@@ -1,4 +1,5 @@
 import React from "react";
+import Quote from "@/components/common/quote";
 
 interface ExperienceDescriptionProps {
   description: string;
@@ -7,9 +8,5 @@ interface ExperienceDescriptionProps {
 export default function ExperienceDescription({
   description,
 }: ExperienceDescriptionProps) {
-  return (
-    <p className="text-sm text-text-secondary font-medium leading-relaxed italic border-l-2 border-border/50 pl-3">
-      {description}
-    </p>
-  );
+  return <Quote text={description} />;
 }

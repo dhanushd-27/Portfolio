@@ -1,4 +1,5 @@
 import React from "react";
+import ExternalLink from "@/components/common/external-link";
 
 export default function Description() {
   return (
@@ -10,15 +11,17 @@ export default function Description() {
           full-stack, AI-powered applications
         </span>{" "}
         with a strong focus on{" "}
-        <span className="text-text-primary font-medium">
-          Applied AI
-        </span>
-        . I care deeply about clean and readable code.
+        <span className="text-text-primary font-medium">Applied AI</span>. I
+        care deeply about clean and readable code.
       </p>
       {/* Previous Experience */}
       <p>
         Previously, I worked as a frontend developer at{" "}
-        <a href="https://serenovolante.com/" target="_blank" className="text-text-primary font-medium underline">Sereno Volante</a>{" "}
+        <ExternalLink
+          href="https://serenovolante.com/"
+          label="Sereno Volante"
+          className="text-text-primary font-medium underline"
+        />{" "}
         building an AI Chatbot for a well-known brand.
       </p>
       {/* Main Tech Stack */}
@@ -35,8 +38,16 @@ export default function Description() {
       </p>
       {/* Collaboration */}
       <p>
-        Open to <span className="text-text-primary font-medium">collaborations</span> and <span className="text-text-primary font-medium">opportunities</span>. Feel free to drop a{" "}
-        <a href="https://twitter.com/messages/compose?recipient_id=1719705300888920064&text=Hi%20Dhanush%2C%20I%20came%20across%20your%20portfolio%20and%20" target="_blank" className="text-text-primary font-medium underline">DM</a>.
+        Open to{" "}
+        <span className="text-text-primary font-medium">collaborations</span>{" "}
+        and <span className="text-text-primary font-medium">opportunities</span>
+        . Feel free to drop a{" "}
+        <ExternalLink
+          href="https://twitter.com/messages/compose?recipient_id=1719705300888920064&text=Hi%20Dhanush%2C%20I%20came%20across%20your%20portfolio%20and%20"
+          label="DM"
+          className="text-text-primary font-medium underline"
+        />
+        .
       </p>
     </div>
   );
