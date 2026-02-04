@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   /* --- BREAKPOINTS --- */
   --breakpoint-lg: 848px;
@@ -66,6 +70,23 @@
   /* --- SPACING & LAYOUT --- */
   --radius-card: 1rem;
   --spacing-header: 96px;
+  /* --- ANIMATIONS --- */
+  --animate-fade-in: fade-in 0.8s ease-out forwards;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  color-scheme: light dark;
 }
 
 /* --- BASE STYLES --- */
@@ -78,7 +99,6 @@
     @apply bg-background text-text-primary antialiased;
   }
 
-  /* Dark Mode Overrides */
   .dark {
     --color-background: var(--color-night);
     --color-surface: var(--color-onyx);
@@ -93,6 +113,26 @@
     --color-outline-hover: var(--color-silver);
     --color-outline-active: var(--color-dim-gray);
   }
+  
+  /* Dark Mode Overrides */
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      --color-background: var(--color-night);
+      --color-surface: var(--color-onyx);
+      --color-border: var(--color-dim-gray);
+      
+      --color-text-primary: var(--color-white-smoke);
+      --color-text-secondary: var(--color-silver);
+      --color-text-muted: var(--color-dim-gray);
+
+      --color-brand: var(--color-white-smoke);
+      --color-brand-foreground: var(--color-night);
+      --color-outline-hover: var(--color-silver);
+      --color-outline-active: var(--color-dim-gray);
+    }
+  }
+
+
 }
 
 /* --- ANIMATIONS & TRANSITIONS --- */

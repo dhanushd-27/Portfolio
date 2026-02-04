@@ -13,7 +13,7 @@ export default function Projects() {
   const hasMore = projectsData.length > 3;
 
   return (
-    <section className="flex flex-col gap-4" id="projects">
+    <section className="flex flex-col gap-4 scroll-mt-32" id="projects">
       <SectionHeader title="Projects" />
 
       <div className="flex flex-col gap-4 md:gap-6 pl-2">
@@ -35,7 +35,14 @@ export default function Projects() {
       {hasMore && (
         <ShowMoreButton
           isExpanded={isExpanded}
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={() => {
+            if (isExpanded) {
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }
+            setIsExpanded(!isExpanded);
+          }}
           totalItems={projectsData.length}
           visibleItemsCount={3}
         />

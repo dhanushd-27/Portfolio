@@ -21,13 +21,41 @@ export default async function Home() {
     <main className="flex min-h-screen w-full justify-center">
       <Border side="left" />
       <div className="flex-1 lg:flex-none lg:w-200 gap-2 px-2 md:px-4">
-        <Header />
+        <div
+          className="opacity-0 animate-fade-in"
+          style={{ animationDelay: "0ms" }}
+        >
+          <Header />
+        </div>
         <section className="flex flex-col gap-16 px-4 sm:px-0">
-          <About />
-          <Experience />
-          <Projects />
-          <Skills />
-          <div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "100ms" }}
+          >
+            <About />
+          </div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "200ms" }}
+          >
+            <Experience />
+          </div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "300ms" }}
+          >
+            <Projects />
+          </div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "400ms" }}
+          >
+            <Skills />
+          </div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "500ms" }}
+          >
             <Connect />
             <Footer />
           </div>

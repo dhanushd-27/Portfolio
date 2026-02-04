@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body className={`${hankenGrotesk.className} antialiased`}>
         <StoreProvider>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
