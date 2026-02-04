@@ -1,0 +1,48 @@
+[
+  {
+    "company": "Team Shiksha",
+    "location": "Remote",
+    "role": "Full Stack Contributor",
+    "period": "June 2025 – Present",
+    "skills": [
+      "Docker", 
+      "Go", 
+      "PostgreSQL", 
+      "jackc/pgx",  
+      "CI/CD"
+    ],
+    "shortDescription": "Volunteering as an full-stack contributor focusing on backend scalability, containerization, and enhancing platform functionality and developer experience.",
+    "bulletPoints": [
+      "Built a GitHub Actions CI pipeline running backend tests and linting, frontend build checks, SQLC and migration validation, with caching and enforced success gates across production branches.",
+      "Integrated PostgreSQL support into the Go backend by implementing the ‘jackc/pgx‘ driver, including the configuration of connection pooling for optimized performance and resource management.",
+      "Containerized the PostgreSQL database using the lightweight ‘postgres:alpine‘ image and Docker Compose, ensuring a consistent and reproducible development environment for all contributors.",
+      "Authored a development-focused Dockerfile for the Go backend and orchestrated its build within a multi-container application using Docker Compose."
+    ]
+  },
+  {
+    "company": "Sereno Volante",
+    "location": "Remote",
+    "role": "Frontend Developer",
+    "period": "Sept 2025 – Nov 2025",
+    "skills": ["React.js", "Tailwind", "Typescript", "motion.dev", "Git", "Github", "Team Collaboration"],
+    "shortDescription": "Built full-stack applied AI features and responsive e-commerce solutions for client brands.",
+    "bulletPoints": [
+      "Implemented a multilingual and voice interaction feature on the client’s website, leveraging ‘react-media-recorder‘ and ‘react-audio-visualizer‘ to enable audio recording, visualization, and playback on the frontend, while transmitting recordings as Base64-encoded ‘.wav‘ files to the backend.",
+      "Developed a proof-of-concept (POC) for an e-commerce platform by making the application fully responsive and enhancing UI elements, including color palette adjustments and interactive hover effects, improving overall user experience.",
+      "Built a second POC to display scraped ads data in a card-based layout with a filtering navbar, enabling users to filter ads by attributes such as last seen, company name, and format."
+    ]
+  },
+  {
+    "company": "Sereno Volante",
+    "location": "Remote",
+    "role": "Frontend Developer Intern",
+    "period": "July 2025 – Aug 2025",
+    "skills": ["React.js", "Javascript", "motion.dev", "Tailwind"],
+    "shortDescription": "Engineered UI revamps and integrated interactive frontend features for high-performance web applications.",
+    "bulletPoints": [
+      "Collaborated directly with a UI/UX designer and the client to engineer a complete revamp of a web application, translating new designs into responsive components using React.js and Tailwind CSS.",
+      "Developed and integrated key frontend features, including a chatbot response loader using motion.dev, while managing asynchronous API calls with React hooks to ensure seamless data flow.",
+      "Engineered a solution for a critical bug that was preventing user feedback from being saved, after investigating a client complaint and identifying the root cause as a faulty API call."
+    ]
+  }
+]

@@ -5,7 +5,7 @@ import SocialLinks from "./social-links";
 
 export default function About() {
   return (
-    <section className="flex flex-col gap-8 text-start w-full px-4 sm:px-0">
+    <section className="flex flex-col gap-8 text-start w-full">
       {/* Header: Name and Role */}
       <div className="flex w-full justify-between pt-8">
         <Headline />

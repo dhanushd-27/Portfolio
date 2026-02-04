@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Description() {
   return (
-    <div className="flex flex-col gap-4 text-text-muted leading-relaxed text-sm md:text-base">
+    <div className="flex flex-col gap-4 text-text-secondary/75 leading-relaxed text-sm md:text-base">
       {/* Introduction */}
       <p>
         I build{" "}

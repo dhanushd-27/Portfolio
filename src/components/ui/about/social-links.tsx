@@ -9,7 +9,7 @@ export default function SocialLinks() {
   ]
 
   return (
-    <div className="flex gap-4 h-full items-center justify-center">
+    <div className="flex gap-4 h-full items-center justify-center pr-2 underline">
       {links.map((link) => (
         <Link
           key={link.label}
