@@ -18,7 +18,18 @@ export function ThemeHandler() {
   }
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    const isDark = theme === "dark";
+
+    // Check if the browser supports the View Transition API
+    if (!document.startViewTransition) {
+      setTheme(isDark ? "light" : "dark");
+      return;
+    }
+
+    // Smoothly transition between themes
+    document.startViewTransition(() => {
+      setTheme(isDark ? "light" : "dark");
+    });
   };
 
   return (

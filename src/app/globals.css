@@ -1,15 +1,25 @@
 @import "tailwindcss";
 
 @theme {
+  /* --- BREAKPOINTS --- */
+  --breakpoint-lg: 848px;
+
+  /* --- COLORS --- */
+  /* Clearing default colors and setting a custom palette */
   --color-*: initial;
   
-  /* --- PALETTE: PRIMITIVES --- */
+  /* Required base colors (as clearing with initial removes them) */
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #ffffff; 
+  --color-black: #000000;
+
+  /* Palette: Primitives */
   --color-night: #131313;
   --color-onyx: #3C3C3C;
   --color-dim-gray: #646464;
   --color-silver: #B5B5B5;
   --color-white-smoke: #F3F3F3;
-  --color-white: #ffffff; 
   --color-error: #ef4444;
 
   /* The Tuatara Scale */
@@ -25,15 +35,12 @@
   --color-tuatara-900: #3c3c3c;
   --color-tuatara-950: #262626;
 
-  /* --- PALETTE: SEMANTIC ALIASES --- */
-  
-  /* Brand mappings */
+  /* Palette: Semantic Aliases (Light Mode Defaults) */
   --color-brand: var(--color-night);
   --color-brand-foreground: var(--color-white-smoke);
   --color-outline-hover: var(--color-onyx);
   --color-outline-active: var(--color-dim-gray);
 
-  /* Defaults (Light Mode) */
   --color-background: var(--color-white-smoke);  
   --color-surface: var(--color-white);           
   --color-border: var(--color-tuatara-200);      
@@ -61,33 +68,46 @@
   --spacing-header: 96px;
 }
 
-/* --------------------------------------------------
-   2. BASE STYLES & DARK MODE LOGIC
--------------------------------------------------- */
+/* --- BASE STYLES --- */
 @layer base {
-  /* 🌙 DARK MODE MAPPING */
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-border, currentColor);
+  }
+
+  body {
+    @apply bg-background text-text-primary antialiased;
+    font-family: var(--font-sans);
+  }
+
+  /* Dark Mode Overrides */
   .dark {
-    /* Use original primitives for dark mode */
     --color-background: var(--color-night);
     --color-surface: var(--color-onyx);
     --color-border: var(--color-dim-gray);
     
-    /* Text flips using your colors */
     --color-text-primary: var(--color-white-smoke);
     --color-text-secondary: var(--color-silver);
     --color-text-muted: var(--color-dim-gray);
 
-    /* Brand in dark mode (Inverted) */
     --color-brand: var(--color-white-smoke);
     --color-brand-foreground: var(--color-night);
     --color-outline-hover: var(--color-silver);
     --color-outline-active: var(--color-dim-gray);
   }
+}
 
+/* --- ANIMATIONS & TRANSITIONS --- */
+@media (prefers-reduced-motion: no-preference) {
   body {
-    background-color: var(--color-background);
-    color: var(--color-text-primary);
-    -webkit-font-smoothing: antialiased;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
