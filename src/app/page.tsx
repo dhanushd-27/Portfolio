@@ -3,6 +3,7 @@ import Border from "@/components/common/border";
 import Header from "@/components/ui/header/header";
 import { prisma } from "@/lib/prisma";
 import Experience from "@/components/ui/experience/experience";
+import Projects from "@/components/ui/projects/projects";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +22,7 @@ export default async function Home() {
         <section className="flex flex-col gap-12 px-4 sm:px-0">
           <About />
           <Experience />
+          <Projects />
         </section>
       </div>
       <Border side="right" />

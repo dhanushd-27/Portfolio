@@ -42,20 +42,6 @@ export default function ExperienceItem({
         <ExperienceDescription description={shortDescription} />
       </div>
 
-      {/* Toggle Button */}
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="flex items-center gap-1.5 text-xs font-semibold text-text-muted hover:text-brand transition-colors w-fit group/btn"
-      >
-        <span>{isExpanded ? "Show less" : "Know more"}</span>
-        <TbChevronDown
-          className={cn(
-            "text-base transition-transform duration-300",
-            isExpanded ? "rotate-180" : "rotate-0",
-          )}
-        />
-      </button>
-
       {/* Expanded Content */}
       <div
         className={cn(
@@ -75,10 +61,23 @@ export default function ExperienceItem({
               <Badge key={skill}>{skill}</Badge>
             ))}
           </div>
-
           <div className="w-full h-px bg-border/50"></div>
         </div>
       </div>
+
+      {/* Toggle Button */}
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="flex items-center gap-1.5 text-xs font-semibold text-text-muted hover:text-brand transition-colors w-fit group/btn"
+      >
+        <span>{isExpanded ? "Show less" : "Know more"}</span>
+        <TbChevronDown
+          className={cn(
+            "text-base transition-transform duration-300",
+            isExpanded ? "rotate-180" : "rotate-0",
+          )}
+        />
+      </button>
     </div>
   );
 }

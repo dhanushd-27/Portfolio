@@ -1,18 +1,74 @@
 [
   {
-    "title": "Civio",
-    "description": "A Framer Community template made with Next.js, Tailwind CSS, Framer Motion, and TypeScript. Features smooth animations, custom 404, and responsive layout.",
-    "repo": "https://github.com/dhanushd-27/Civio",
-    "link": "https://civio.dhanush.tech/",
-    "demo": "#",
-    "deployed": true
+    "projectName": "CoBrain",
+    "projectDescription": "A second brain application for managing personal knowledge, bookmarks, and code snippets with AI-powered search and summarization.",
+    "projectFeatures": [
+      "AI-powered content summarization",
+      "Full-text search across all saved brains",
+      "Tag-based organization system",
+      "Interactive dashboard with visual insights"
+    ],
+    "techStack": ["Next.js", "Express.js", "Prisma", "PostgreSQL", "OpenAI API", "Tailwind CSS"],
+    "deployed": true,
+    "link": "https://cobrain.dhanush.tech",
+    "video": "#",
+    "repo": "https://github.com/dhanushd-27/cobrain"
   },
   {
-    "title": "Milestone X",
-    "description": "A responsive web app built in a day using Next.js, Tailwind CSS, and Framer Motion. Mobile-first design with animations. Based on a Framer template and deployed on Vercel.",
-    "repo": "https://github.com/dhanushd-27/MilestoneX",
-    "link": "https://milestonex.dhanush.tech/",
-    "demo": "#",
-    "deployed": true
+    "projectName": "Civio",
+    "projectDescription": "Engineered a fully responsive and animated landing page optimized for performance and SEO using Next.js, Tailwind CSS, and Framer Motion.",
+    "projectFeatures": [
+      "Optimized for performance and SEO",
+      "Fully responsive architecture",
+      "Interactive Framer Motion animations"
+    ],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Framer Motion",
+      "Tailwind CSS"
+    ],
+    "deployed": true,
+    "link": "https://civio.dhanush.tech",
+    "video": "#",
+    "repo": "https://github.com/dhanushd-27/Civio"
+  },
+  {
+    "projectName": "Milestone X",
+    "projectDescription": "Engineered a fully responsive and animated landing page optimized for performance and SEO using Next.js, Tailwind CSS, and Framer Motion.",
+    "projectFeatures": [
+      "Mobile-first design approach",
+      "Dynamic scrolling animations",
+      "SEO friendly structure"
+    ],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Motion",
+      "Tailwind CSS"
+    ],
+    "deployed": true,
+    "link": "https://milestonex.dhanush.tech",
+    "video": "#",
+    "repo": "https://github.com/dhanushd-27/MilestoneX"
+  },
+  {
+    "projectName": "Prodio",
+    "projectDescription": "Engineered a fully responsive and animated landing page optimized for performance and SEO using Next.js, Tailwind CSS, and Framer Motion.",
+    "projectFeatures": [
+      "Modern UI/UX principles",
+      "Reusable layout components",
+      "Fast page loading speeds"
+    ],
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Framer Motion",
+      "Tailwind"
+    ],
+    "deployed": true,
+    "link": "#",
+    "video": "#",
+    "repo": "#"
   }
 ]
