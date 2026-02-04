@@ -4,6 +4,9 @@
   /* --- BREAKPOINTS --- */
   --breakpoint-lg: 848px;
 
+  /* --- FONTS --- */
+  --font-sans: var(--font-hanken-grotesk), ui-sans-serif, system-ui, sans-serif;
+
   /* --- COLORS --- */
   /* Clearing default colors and setting a custom palette */
   --color-*: initial;
