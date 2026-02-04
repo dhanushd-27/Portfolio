@@ -18,6 +18,8 @@ interface ExperienceItemProps {
   skills: string[];
 }
 
+import ExpandableItemWrapper from "@/components/common/expandable-item-wrapper";
+
 export default function ExperienceItem({
   company,
   role,
@@ -42,16 +44,12 @@ export default function ExperienceItem({
         <ExperienceDescription description={shortDescription} />
       </div>
 
-      {/* Expanded Content */}
-      <div
-        className={cn(
-          "grid transition-all duration-300 ease-in-out",
-          isExpanded
-            ? "grid-rows-[1fr] opacity-100"
-            : "grid-rows-[0fr] opacity-0 overflow-hidden",
-        )}
+      <ExpandableItemWrapper
+        isExpanded={isExpanded}
+        onToggle={() => setIsExpanded(!isExpanded)}
+        toggleLabelClosed="Know more"
       >
-        <div className="overflow-hidden flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <div className="pt-2">
             <BulletList items={bulletPoints} />
           </div>
@@ -63,21 +61,7 @@ export default function ExperienceItem({
           </div>
           <div className="w-full h-px bg-border/50"></div>
         </div>
-      </div>
-
-      {/* Toggle Button */}
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="flex items-center gap-1.5 text-xs font-semibold text-text-muted hover:text-brand transition-colors w-fit group/btn"
-      >
-        <span>{isExpanded ? "Show less" : "Know more"}</span>
-        <TbChevronDown
-          className={cn(
-            "text-base transition-transform duration-300",
-            isExpanded ? "rotate-180" : "rotate-0",
-          )}
-        />
-      </button>
+      </ExpandableItemWrapper>
     </div>
   );
 }

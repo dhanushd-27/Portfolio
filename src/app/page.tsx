@@ -4,6 +4,7 @@ import Header from "@/components/ui/header/header";
 import { prisma } from "@/lib/prisma";
 import Experience from "@/components/ui/experience/experience";
 import Projects from "@/components/ui/projects/projects";
+import Skills from "@/components/ui/skills/skills";
 
 export const dynamic = "force-dynamic";
 
@@ -19,10 +20,11 @@ export default async function Home() {
       <Border side="left" />
       <div className="flex-1 lg:flex-none lg:w-200 gap-2 px-2 md:px-4">
         <Header />
-        <section className="flex flex-col gap-12 px-4 sm:px-0">
+        <section className="flex flex-col gap-16 px-4 sm:px-0">
           <About />
           <Experience />
           <Projects />
+          <Skills />
         </section>
       </div>
       <Border side="right" />

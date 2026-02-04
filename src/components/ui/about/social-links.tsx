@@ -3,13 +3,13 @@ import React from 'react'
 
 export default function SocialLinks() {
   const links = [
-    { href: 'https://github.com/dhanushd-27', label: 'GitHub' },
+    { href: 'https://github.com/dhanushd-27', label: 'Github' },
     { href: 'https://www.linkedin.com/in/dhanush27/', label: 'LinkedIn' },
-    { href: 'https://x.com/orcatwt', label: 'Twitter' },
+    { href: 'https://x.com/orcatwt', label: 'X' },
   ]
 
   return (
-    <div className="flex gap-4 h-full items-center justify-center pr-2 underline">
+    <div className="flex gap-4 h-full items-center justify-start sm:justify-center pr-2 underline">
       {links.map((link) => (
         <Link
           key={link.label}

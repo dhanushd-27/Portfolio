@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import SectionHeader from "@/components/common/section-header";
 import ProjectItem from "./project-item";
 import projectsData from "@/assets/projects.json";
-import { TbChevronDown, TbChevronUp } from "react-icons/tb";
-import { cn } from "@/lib/utils";
+import ShowMoreButton from "@/components/common/show-more-button";
 
 export default function Projects() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -34,25 +33,12 @@ export default function Projects() {
       </div>
 
       {hasMore && (
-        <div className="flex justify-center mt-4">
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className={cn(
-              "flex items-center gap-2 px-6 py-2.5 rounded-full border border-border bg-background hover:bg-muted/50 text-text-secondary text-sm font-medium transition-all duration-300 drop-shadow-sm hover:drop-shadow-md active:scale-95 group",
-            )}
-          >
-            <span>
-              {isExpanded
-                ? "Show Less"
-                : `Show More (${projectsData.length - 3} more)`}
-            </span>
-            {isExpanded ? (
-              <TbChevronUp className="text-lg transition-transform" />
-            ) : (
-              <TbChevronDown className="text-lg transition-transform group-hover:translate-y-0.5" />
-            )}
-          </button>
-        </div>
+        <ShowMoreButton
+          isExpanded={isExpanded}
+          onClick={() => setIsExpanded(!isExpanded)}
+          totalItems={projectsData.length}
+          visibleItemsCount={3}
+        />
       )}
     </section>
   );

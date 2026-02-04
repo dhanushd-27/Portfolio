@@ -22,6 +22,8 @@ interface ProjectItemProps {
   repo: string;
 }
 
+import ExpandableItemWrapper from "@/components/common/expandable-item-wrapper";
+
 export default function ProjectItem({
   projectName,
   projectDescription,
@@ -35,8 +37,9 @@ export default function ProjectItem({
   const [isExpanded, setIsExpanded] = useState(false);
 
   const mainLink = deployed ? link : video;
-  const linkLabel = deployed ? "Live" : "Video";
+  const linkLabel = deployed ? "Link" : "Video";
   const LinkIcon = deployed ? TbExternalLink : TbPlayerPlay;
+  const showMainLink = deployed ? mainLink !== "#" : true;
 
   return (
     <div className="flex flex-col gap-3 group">
@@ -57,7 +60,7 @@ export default function ProjectItem({
                 <span>Repo</span>
               </a>
             )}
-            {mainLink !== "#" && (
+            {showMainLink && (
               <a
                 href={mainLink}
                 target="_blank"
@@ -76,16 +79,12 @@ export default function ProjectItem({
         </p>
       </div>
 
-      {/* Expanded Content */}
-      <div
-        className={cn(
-          "grid transition-all duration-300 ease-in-out",
-          isExpanded
-            ? "grid-rows-[1fr] opacity-100"
-            : "grid-rows-[0fr] opacity-0 overflow-hidden",
-        )}
+      <ExpandableItemWrapper
+        isExpanded={isExpanded}
+        onToggle={() => setIsExpanded(!isExpanded)}
+        toggleLabelClosed="Project Details"
       >
-        <div className="overflow-hidden flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <div className="pt-2">
             <h4 className="text-xs font-bold uppercase tracking-widest text-text-muted/60 mb-2">
               Key Features
@@ -101,21 +100,7 @@ export default function ProjectItem({
 
           <div className="w-full h-px bg-border/50"></div>
         </div>
-      </div>
-
-      {/* Toggle Button */}
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="flex items-center gap-1.5 text-xs font-semibold text-text-muted hover:text-brand transition-colors w-fit group/btn"
-      >
-        <span>{isExpanded ? "Show less" : "Project Details"}</span>
-        <TbChevronDown
-          className={cn(
-            "text-base transition-transform duration-300",
-            isExpanded ? "rotate-180" : "rotate-0",
-          )}
-        />
-      </button>
+      </ExpandableItemWrapper>
     </div>
   );
 }

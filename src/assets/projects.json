@@ -15,18 +15,37 @@
     "repo": "https://github.com/dhanushd-27/cobrain"
   },
   {
-    "projectName": "Civio",
-    "projectDescription": "Engineered a fully responsive and animated landing page optimized for performance and SEO using Next.js, Tailwind CSS, and Framer Motion.",
+    "projectName": "Stroke",
+    "projectDescription": "A minimal, beautifully designed drawing game where you challenge yourself to draw a perfect circle. Test your precision and share your score with the world!",
     "projectFeatures": [
-      "Optimized for performance and SEO",
+      "Precision Tracking: Real-time feedback on your drawing accuracy",
+      "Score Calculation: Percentage score based on how close you are to a perfect circle",
+      "Share your results: Easily share your performance on Twitter or copy it to your clipboard",
+      "Minimalist UI: A clean, premium design focused on the drawing experience"
+    ],
+    "techStack": ["Next.js 15", "React 19", "Tailwind CSS 4", "Turborepo", "Bun", "TypeScript", "Git", "Github", "Vercel"],
+    "deployed": true,
+    "link": "https://stroke.dhanush.tech/",
+    "video": "#",
+    "repo": "https://github.com/dhanushd-27/Stroke"
+  },
+  {
+    "projectName": "Civio",
+    "projectDescription": "A Next.js landing page built by re-coding a popular portfolio Framer template.",
+    "projectFeatures": [
       "Fully responsive architecture",
-      "Interactive Framer Motion animations"
+      "Interactive Framer Motion animations",
+      "Coded from a free Framer template using modern tech stack",
+      "Deployed on Vercel with Git version control and GitHub for remote storage"
     ],
     "techStack": [
       "Next.js",
       "TypeScript",
       "Framer Motion",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Git",
+      "Github",
+      "Vercel"
     ],
     "deployed": true,
     "link": "https://civio.dhanush.tech",
@@ -35,17 +54,22 @@
   },
   {
     "projectName": "Milestone X",
-    "projectDescription": "Engineered a fully responsive and animated landing page optimized for performance and SEO using Next.js, Tailwind CSS, and Framer Motion.",
+    "projectDescription": "A high-speed, mobile-first implementation of a Framer community template, and hosted on Vercel.",
     "projectFeatures": [
       "Mobile-first design approach",
       "Dynamic scrolling animations",
-      "SEO friendly structure"
+      "SEO friendly structure",
+      "Coded from a free Framer template using modern tech stack",
+      "Deployed on Vercel with Git version control and GitHub for remote storage"
     ],
     "techStack": [
       "Next.js",
       "TypeScript",
       "Motion",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Git",
+      "Github",
+      "Vercel"
     ],
     "deployed": true,
     "link": "https://milestonex.dhanush.tech",
@@ -54,21 +78,26 @@
   },
   {
     "projectName": "Prodio",
-    "projectDescription": "Engineered a fully responsive and animated landing page optimized for performance and SEO using Next.js, Tailwind CSS, and Framer Motion.",
+    "projectDescription": "A sleek, responsive landing page ported from a Framer design to Next.js, featuring advanced animations and modern UI standards.",
     "projectFeatures": [
       "Modern UI/UX principles",
       "Reusable layout components",
-      "Fast page loading speeds"
+      "Fast page loading speeds",
+      "Coded from a free Framer template using modern tech stack",
+      "Deployed on Vercel with Git version control and GitHub for remote storage"
     ],
     "techStack": [
       "Next.js",
       "TypeScript",
       "Framer Motion",
-      "Tailwind"
+      "Tailwind",
+      "Git",
+      "Github",
+      "Vercel"
     ],
     "deployed": true,
-    "link": "#",
+    "link": "https://prodio.dhanush.tech",
     "video": "#",
-    "repo": "#"
+    "repo": "https://github.com/dhanushd-27/Prodio"
   }
 ]
