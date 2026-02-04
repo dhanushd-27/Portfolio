@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${hankenGrotesk.variable} antialiased`}>
+      <body className={`${hankenGrotesk.className} antialiased`}>
         <StoreProvider>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             {children}

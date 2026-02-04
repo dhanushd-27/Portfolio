@@ -1,3 +1,4 @@
+import About from "@/components/about/about";
 import Border from "@/components/common/border";
 import Header from "@/components/header/header";
 import { prisma } from "@/lib/prisma";
@@ -14,8 +15,9 @@ export default async function Home() {
   return (
     <main className="flex h-screen w-screen justify-center">
       <Border side="left" />
-      <div className="flex-1 lg:flex-none lg:w-200 items-center justify-center gap-2 relative">
+      <div className="flex-1 lg:flex-none lg:w-200 gap-2 px-2 md:px-4">
         <Header />
+        <About />
       </div>
       <Border side="right" />
     </main>
