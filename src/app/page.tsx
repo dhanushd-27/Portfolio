@@ -1,31 +1,67 @@
-import Quote from "@/components/Quote"
-import Techstack from "@/components/TechStack/Techstack"
-import Profile from "@/components/Profile/Profile"
-import Links from "@/components/Socials/Socials"
-import About from "@/components/About"
-import Photos from "@/components/Photos"
-import Projects from "@/components/Projects/Projects"
-import CopyMail from "@/components/CopyMail"
-import Switch from "@/components/Switch"
-import React from "react"
+import About from "@/components/ui/about/about";
+import Border from "@/components/common/border";
+import Header from "@/components/ui/header/header";
+import { prisma } from "@/lib/prisma";
+import Experience from "@/components/ui/experience/experience";
+import Projects from "@/components/ui/projects/projects";
+import Skills from "@/components/ui/skills/skills";
+import Connect from "@/components/ui/connect/connect";
+import Footer from "@/components/ui/footer/footer";
 
-export default function Home() {
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  await prisma.visitors.upsert({
+    where: { id: 1 },
+    update: { count: { increment: 1 } },
+    create: { id: 1, count: 1 },
+  });
 
   return (
-    <>
-      <div className="bg-bg-dark flex lg:h-screen justify-center items-center p-5">
-        <div className='screen'>
-          <Profile />
-          <About />
-          <Techstack />
-          <Projects />
-          <CopyMail />
-          <Links />
-          <Switch />
-          <Photos />
-          <Quote />
+    <main className="flex min-h-screen w-full justify-center">
+      <Border side="left" />
+      <div className="flex-1 lg:flex-none lg:w-200 gap-2 px-2 md:px-4">
+        <div
+          className="opacity-0 animate-fade-in"
+          style={{ animationDelay: "0ms" }}
+        >
+          <Header />
         </div>
+        <section className="flex flex-col gap-16 px-4 sm:px-0">
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "100ms" }}
+          >
+            <About />
+          </div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "200ms" }}
+          >
+            <Experience />
+          </div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "300ms" }}
+          >
+            <Projects />
+          </div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "400ms" }}
+          >
+            <Skills />
+          </div>
+          <div
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "500ms" }}
+          >
+            <Connect />
+            <Footer />
+          </div>
+        </section>
       </div>
-    </>
-  )
+      <Border side="right" />
+    </main>
+  );
 }

@@ -1,51 +1,18 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Cursor from "@/components/Cursor";
 import localFont from "next/font/local";
+import "./globals.css";
+import { ThemeProvider } from "@/components/ui/theme/theme-provider";
+import StoreProvider from "./StoreProvider";
+import { Analytics } from "@vercel/analytics/react";
 
-const dmSans = localFont({
-  src: [
-    {
-      path: "../fonts/DM_Sans/static/DMSans-Thin.ttf",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../fonts/DM_Sans/static/DMSans-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../fonts/DM_Sans/static/DMSans-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../fonts/DM_Sans/static/DMSans-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../fonts/DM_Sans/static/DMSans-ExtraBold.ttf",
-      weight: "800",
-      style: "normal",
-    },
-    {
-      path: "../fonts/DM_Sans/static/DMSans-Black.ttf",
-      weight: "900",
-      style: "normal",
-    },
-    {
-      path: "../fonts/DM_Sans/static/DMSans-ExtraLight.ttf",
-      weight: "200",
-      style: "normal",
-    },
-  ]
+const hankenGrotesk = localFont({
+  src: "../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf",
+  variable: "--font-hanken-grotesk",
 });
 
 export const metadata: Metadata = {
-  title: "D Dhanush",
-  description: "My Portfolio",
+  title: "Dhanush",
+  description: "Welcome to Dhanush's Portfolio",
 };
 
 export default function RootLayout({
@@ -54,12 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`antialiased ${dmSans.className}`}
-      >
-        <Cursor />
-        {children}
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <body className={`${hankenGrotesk.className} antialiased`}>
+        <StoreProvider>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+            {children}
+            <Analytics />
+          </ThemeProvider>
+        </StoreProvider>
       </body>
     </html>
   );

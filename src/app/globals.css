@@ -1,216 +1,152 @@
 @import "tailwindcss";
 
-@layer base {
-  /* It is to change actual html elements */
-  * {
-    cursor: none;
-  }
-}
-
-@layer components {
-  /* Components are for reusable UI elements */
-  .box {
-    font-family: "DMSans";
-    background-color: var(--color-bg-card);
-    border-radius: 0.5rem;
-    border: 1px solid var(--color-surface-primary);
-    padding: 15px 20px;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .box-light {
-    font-family: "DMSans";
-    background-color: var(--color-bg-light-card);
-    border-radius: 0.5rem;
-    border: 1px solid var(--color-light-border);
-    padding: 15px 20px;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .box-light-hover:hover {
-    background-color: var(--color-bg-light-hover);
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .box-hover:hover {
-    background-color: var(--color-bg-hover);
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .text-default {
-    color: var(--color-text-default);
-  }
-}
-
-@layer utilities {
-  /*  Utilities are for single purpose use case such as border-radius, margin, padding, etc. */
-  .circle {
-    @apply h-5 w-5 bg-accent-cursor rounded-full absolute z-999 cursor-none;
-  }
-
-  .header {
-    @apply tracking-widest uppercase text-[var(--color-text-muted)];
-  }
-
-  .section-title {
-    @apply text-accent-light underline;
-  }
-
-  .section-content {
-    @apply text-[var(--color-text-default)] text-sm pl-2;
-  }
-
-  .section-description {
-    @apply text-sm text-text-muted pl-2 w-full text-justify hover:text-accent-light transition-all duration-300 ease-in-out;
-  }
-
-  .hide-scrollbar {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
-  }
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
-
-  .screen {
-    @apply flex flex-col gap-5;
-    
-    @media (min-width: 640px) {
-      @apply grid grid-cols-8 gap-5 h-min;
-    }
-
-    @media (min-width: 1288px) {
-      @apply grid grid-cols-12 grid-rows-12 w-full h-full gap-5;
-    }
-  }
-
-  .profile-container {
-    @apply flex items-center justify-center relative;
-
-    @media (min-width: 640px) {
-      @apply col-start-1 col-end-4 row-start-1 row-end-3;
-    }
-
-    @media (min-width: 1288px) {
-      @apply col-start-4 col-end-6 row-start-1 row-end-6 flex items-center justify-center relative;
-    }
-  }
-
-  .profile-content {
-    @apply flex flex-col gap-4 items-center justify-start;
-
-    @media (min-width: 1288px) {
-      @apply flex flex-col gap-4 items-center justify-start;
-    }
-  }
-
-  .projects-container {
-    @apply flex flex-col gap-6 relative;
-
-    @media (min-width: 640px) {
-      @apply col-start-4 col-end-9 row-start-3;
-    }
-
-    @media (min-width: 1288px) {
-      @apply col-start-10 col-end-13 row-start-1 row-end-10 flex flex-col gap-6 relative h-full;
-    }
-  }
-
-  .socials-container {
-    @apply flex flex-col gap-6 w-full;
-
-    @media (min-width: 640px) {
-      @apply col-start-4 col-end-7 row-start-4 row-end-6;
-    }
-
-    @media (min-width: 1288px) {
-      @apply col-start-4 col-end-6 row-start-6 row-end-9 flex flex-col gap-6 w-full;
-    }
-  }
-
-  .techstack-container {
-    @apply overflow-auto flex flex-col gap-6 relative;
-
-    @media (min-width: 640px) {
-      @apply col-start-1 col-end-4 row-start-3 row-end-6;
-    }
-
-    @media (min-width: 1288px) {
-      @apply col-start-1 col-end-4 row-start-1 row-end-13 overflow-auto flex flex-col gap-6 relative h-full;
-    }
-  }
-
-  .about-container {
-    @apply flex flex-col gap-6 relative;
-
-    @media (min-width: 640px) {
-      @apply col-start-4 col-end-9 row-start-1 row-end-3;
-    }
-
-    @media (min-width: 1288px) {
-      @apply col-start-6 col-end-10 row-start-1 row-end-7 flex flex-col gap-6 relative;
-    }
-  }
-
-  .copy-mail-container {
-    @apply overflow-y-auto;
-
-    @media (min-width: 640px) {
-      @apply col-start-7 col-end-9 row-start-4 row-end-6 h-max;
-    }
-
-    @media (min-width: 1288px) {
-      @apply col-start-10 col-end-13 row-start-10 row-end-13 overflow-y-auto h-full;
-    }
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 @theme {
-  --breakpoint-lg: 1288px;
-  --breakpoint-xs: 414px;
+  /* --- BREAKPOINTS --- */
+  --breakpoint-lg: 848px;
 
-  /* Base colors */
-  --color-bg-dark: rgba(9, 9, 9, 1);
-  --color-bg-card: rgba(20, 20, 20, 1);
-  --color-bg-hover: rgba(31, 31, 31, 1);
-  --color-bg-light: rgb(244, 245, 246);
-  --color-bg-light-card: rgb(255, 255, 255);
-  --color-light-border: rgb(216, 219, 222);
-
+  /* --- COLORS --- */
+  /* Clearing default colors and setting a custom palette */
+  --color-*: initial;
   
-  /* Surface colors */
-  --color-surface-primary: rgba(36, 36, 36, 1);
-  --color-surface-secondary: rgba(31, 31, 31, 1);
+  /* Required base colors (as clearing with initial removes them) */
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #ffffff; 
+  --color-black: #000000;
+
+  /* Palette: Primitives */
+  --color-night: #131313;
+  --color-onyx: #3C3C3C;
+  --color-dim-gray: #646464;
+  --color-silver: #B5B5B5;
+  --color-white-smoke: #F3F3F3;
+  --color-error: #ef4444;
+
+  /* The Tuatara Scale */
+  --color-tuatara-50: #f6f6f6;
+  --color-tuatara-100: #e7e7e7;
+  --color-tuatara-200: #d1d1d1;
+  --color-tuatara-300: #b0b0b0;
+  --color-tuatara-400: #888888;
+  --color-tuatara-500: #6d6d6d;
+  --color-tuatara-600: #5d5d5d;
+  --color-tuatara-700: #4f4f4f;
+  --color-tuatara-800: #454545;
+  --color-tuatara-900: #3c3c3c;
+  --color-tuatara-950: #262626;
+
+  /* Palette: Semantic Aliases (Light Mode Defaults) */
+  --color-brand: var(--color-night);
+  --color-brand-foreground: var(--color-white-smoke);
+  --color-outline-hover: var(--color-onyx);
+  --color-outline-active: var(--color-dim-gray);
+
+  --color-background: var(--color-white-smoke);  
+  --color-surface: var(--color-white);           
+  --color-border: var(--color-tuatara-200);      
   
-  /* Text colors */
-  --color-text-muted: rgba(102, 102, 102, 1);
-  --color-text-default: rgba(204, 204, 204, 1);
-  --color-text-light-muted:  rgb(138, 148, 158);
-  --color-text-light-default: rgb(31, 31, 31);
+  --color-text-primary: var(--color-night);      
+  --color-text-secondary: var(--color-onyx);     
+  --color-text-muted: var(--color-dim-gray);     
 
-  /* Accent colors */
-  --color-accent-light: rgba(172, 172, 172, 1);
-  --color-accent-white: rgba(255, 255, 255, 1);
-  --color-accent-cursor: rgba(255, 255, 255, 0.24);
+  /* --- TYPOGRAPHY --- */
+  --text-h1: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+  --text-h1--line-height: 1.15;
+  --text-h1--letter-spacing: -0.02em;
+  --text-h1--font-weight: 700;
+  
+  --text-h2: clamp(2.25rem, 4.5vw + 1rem, 4.25rem);
+  --text-h2--line-height: 1.15;
+  --text-h2--letter-spacing: -0.02em;
+  --text-h2--font-weight: 700;
 
-  /*  */
-  --color-social-discord: rgba(88, 101, 242, 1);
-  --color-social-github: rgba(51, 51, 51, 1);
-  --color-social-linkedin: rgba(10, 102, 194, 1);
-  --color-social-peerlist: rgba(0, 170, 69, 1);
-  --color-social-x: rgba(0, 0, 0, 1);
+  --text-body: clamp(0.75rem, 0.3vw + 0.6rem, 0.875rem);
+  --text-body--line-height: 1.55;
 
-  /* Legacy color variables - to be removed after migration */
-  /*
-  --color-background: rgba(9, 9, 9, 1);
-  --color-primary: rgba(20, 20, 20, 1);
-  --color-primary-hover: rgba(31, 31, 31, 1);
-  --color-secondary: rgba(36, 36, 36, 1);
-  --color-tertiary: rgba(31, 31, 31, 1);
-  --color-text-secondary: rgba(102, 102, 102, 1);
-  --color-text-primary: rgba(204, 204, 204, 1);
-  --color-quaternary: rgba(172, 172, 172, 1);
-  --color-logo: rgba(255, 255, 255, 1);
-  --color-cursor: rgba(255, 255, 255, 0.24);
-  */
+  /* --- SPACING & LAYOUT --- */
+  --radius-card: 1rem;
+  --spacing-header: 96px;
+  /* --- ANIMATIONS --- */
+  --animate-fade-in: fade-in 0.8s ease-out forwards;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+/* --- BASE STYLES --- */
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-border, currentColor);
+  }
+
+  body {
+    @apply bg-background text-text-primary antialiased;
+  }
+
+  .dark {
+    --color-background: var(--color-night);
+    --color-surface: var(--color-onyx);
+    --color-border: var(--color-dim-gray);
+    
+    --color-text-primary: var(--color-white-smoke);
+    --color-text-secondary: var(--color-silver);
+    --color-text-muted: var(--color-dim-gray);
+
+    --color-brand: var(--color-white-smoke);
+    --color-brand-foreground: var(--color-night);
+    --color-outline-hover: var(--color-silver);
+    --color-outline-active: var(--color-dim-gray);
+  }
+  
+  /* Dark Mode Overrides */
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      --color-background: var(--color-night);
+      --color-surface: var(--color-onyx);
+      --color-border: var(--color-dim-gray);
+      
+      --color-text-primary: var(--color-white-smoke);
+      --color-text-secondary: var(--color-silver);
+      --color-text-muted: var(--color-dim-gray);
+
+      --color-brand: var(--color-white-smoke);
+      --color-brand-foreground: var(--color-night);
+      --color-outline-hover: var(--color-silver);
+      --color-outline-active: var(--color-dim-gray);
+    }
+  }
+
+
+}
+
+/* --- ANIMATIONS & TRANSITIONS --- */
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

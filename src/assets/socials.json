@@ -1,27 +1,22 @@
 {
-  "discord": {
-    "name": "discord",
-    "logo": "/discord.svg",
-    "link": "https://discord.com/users/heyorca"
-  },
   "github": {
-    "name": "github",
-    "logo": "/github.svg", 
+    "name": "Github",
     "link": "https://github.com/dhanushd-27"
   },
   "linkedin": {
-    "name": "linkedin",
-    "logo": "/linkedin.svg",
+    "name": "Linkedin",
     "link": "https://www.linkedin.com/in/dhanush27/"
   },
+  "x": {
+    "name": "X",
+    "link": "https://x.com/orcatwt"
+  },
   "peerlist": {
-    "name": "peerlist",
-    "logo": "/peerlist.svg",
+    "name": "Peerlist",
     "link": "https://peerlist.io/dhanush_d27"
   },
-  "x": {
-    "name": "x",
-    "logo": "/x.svg",
-    "link": "https://x.com/orcatwt"
+  "email": {
+    "name": "Email",
+    "link": "mailto:dhanushd.work@gmail.com?subject=%5BAction%20Required%5D%20-%20Your%20subject&body=Hey%20Man"
   }
 }

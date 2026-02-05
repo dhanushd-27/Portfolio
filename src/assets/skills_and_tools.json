@@ -1,0 +1,23 @@
+{
+  "Languages": ["TypeScript", "JavaScript", "Python", "Go"],
+  "Frontend": [
+    "Next.js",
+    "React",
+    "Redux Toolkit",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Zod",
+    "HTML Canvas",
+    "motion.dev"
+  ],
+  "Backend": [
+    "Node.js",
+    "Express.js",
+    "JWT",
+    "Bcrypt",
+    "Google OAuth",
+    "Echo (Go)"
+  ],
+  "DevOps": ["Docker", "GitHub Actions (CI/CD)", "Vercel"],
+  "Databases, ORMs & Tools": ["PostgreSQL", "Prisma", "Drizzle", "Git", "GitHub", "Turborepo", "Bun", "Postman", "VS Code", "Antigravity", "Cursor"]
+}
