@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Dhanush's Portfolio",
     images: [
       {
-        url: "/preview.png",
+        url: "https://dhanush.tech/preview.png",
         width: 1200,
         height: 630,
         alt: "Dhanush Portfolio Preview",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dhanush | Applied AI & Full Stack Developer",
     description: "Applied AI and Full Stack Developer Portfolio",
-    images: ["/preview.png"],
+    images: ["https://dhanush.tech/preview.png"],
     creator: "@orcatwt",
   },
 };
