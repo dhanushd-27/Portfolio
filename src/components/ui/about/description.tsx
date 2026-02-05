@@ -18,7 +18,7 @@ export default function Description() {
       <p>
         Previously, I worked as a frontend developer at{" "}
         <ExternalLink
-          href="https://serenovolante.com/"
+          href="https://www.linkedin.com/company/sereno-ai/"
           label="Sereno Volante"
           className="text-text-primary font-medium underline"
         />{" "}
