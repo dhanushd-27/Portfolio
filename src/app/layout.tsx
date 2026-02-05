@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme/theme-provider";
 import StoreProvider from "./StoreProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 const hankenGrotesk = localFont({
   src: "../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <StoreProvider>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             {children}
+            <Analytics />
           </ThemeProvider>
         </StoreProvider>
       </body>
