@@ -1,14 +1,14 @@
 [
   {
     "projectName": "CoBrain",
-    "projectDescription": "A second brain application for managing personal knowledge, bookmarks, and code snippets with AI-powered search and summarization.",
+    "projectDescription": "CoBrain is your second brain - designed to help you save notes and links, organise it into meaningful slices, and recall information exactly when you need it. It’s simple, flexible, and built to adapt to how you think.",
     "projectFeatures": [
-      "AI-powered content summarization",
-      "Full-text search across all saved brains",
-      "Tag-based organization system",
-      "Interactive dashboard with visual insights"
+      "Save text notes, important links, tweets, documents, code snippets, and todo lists in one place.",
+      "Divide your brain into slices (categories) and use memos to neatly store and manage related information.",
+      "Keep your brain private or share specific slices with anyone using a simple link.",
+      "Update, delete, or add new brains to a slice whenever your knowledge evolves."
     ],
-    "techStack": ["Next.js", "Express.js", "Prisma", "PostgreSQL", "OpenAI API", "Tailwind CSS"],
+    "techStack": ["Next.js", "Express.js", "Drizzle", "PostgreSQL", "Git", "Github", "Vercel", "TypeScript", "Turborepo", "Bun", "Motion", "Tailwind CSS", "Passport JS", "Google OAuth"],
     "deployed": true,
     "link": "https://cobrain.dhanush.tech",
     "video": "#",
