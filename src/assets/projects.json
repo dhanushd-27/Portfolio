@@ -6,9 +6,10 @@
       "Save text notes, important links, tweets, documents, code snippets, and todo lists in one place.",
       "Divide your brain into slices (categories) and use memos to neatly store and manage related information.",
       "Keep your brain private or share specific slices with anyone using a simple link.",
-      "Update, delete, or add new brains to a slice whenever your knowledge evolves."
+      "Update, delete, or add new brains to a slice whenever your knowledge evolves.",
+      "Instant, context-aware slice descriptions powered by Gemini."
     ],
-    "techStack": ["Next.js", "Express.js", "Drizzle", "PostgreSQL", "Git", "Github", "Vercel", "TypeScript", "Turborepo", "Bun", "Motion", "Tailwind CSS", "Passport JS", "Google OAuth"],
+    "techStack": ["Next.js", "Express.js", "LangChain", "Drizzle", "PostgreSQL", "Git", "Github", "Vercel", "TypeScript", "Turborepo", "Bun", "Motion", "Tailwind CSS", "Passport JS", "Google OAuth"],
     "deployed": true,
     "link": "https://cobrain.dhanush.tech",
     "video": "#",
