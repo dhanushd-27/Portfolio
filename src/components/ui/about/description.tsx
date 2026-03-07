@@ -1,4 +1,3 @@
-import React from "react";
 import ExternalLink from "@/components/common/external-link";
 
 export default function Description() {
@@ -12,27 +11,23 @@ export default function Description() {
         </span>{" "}
         with a strong focus on{" "}
         <span className="text-text-primary font-medium">Applied AI</span>. I
-        care deeply about clean and readable code.
+        care deeply about architecting scalable systems and clean code.
       </p>
       {/* Previous Experience */}
       <p>
-        Previously, I worked as a frontend developer at{" "}
-        <ExternalLink
-          href="https://www.linkedin.com/company/sereno-ai/"
-          label="Sereno Volante"
-          className="text-text-primary font-medium underline"
-        />{" "}
-        building an AI Chatbot for a well-known brand.
+        Currently, I am a Full Stack Developer at{" "}
+        <span className="text-text-primary font-medium">Zentor</span>, building
+        internal order management systems and optimizing platform features.
       </p>
       {/* Main Tech Stack */}
       <p>
         I work most days with{" "}
         <span className="text-text-primary font-medium">
-          Next.js and Express.js using TypeScript
+          Next.js, TypeScript, and Prisma
         </span>
-        , and I'm currently building applications with{" "}
+        , and I'm specialized in building AI-driven tools using{" "}
         <span className="text-text-primary font-medium">
-          Python, FastAPI, and LangGraph
+          LangChain and Gemini API
         </span>
         .
       </p>

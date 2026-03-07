@@ -1,23 +1,23 @@
 {
-  "Languages": ["TypeScript", "JavaScript", "Python", "Go"],
-  "Frontend": [
-    "Next.js",
-    "React",
+  "Languages": ["TypeScript", "JavaScript", "Python"],
+  "Frameworks": ["Next.js", "React", "Express", "LangChain"],
+  "Infrastructure": [
+    "PostgreSQL",
+    "Docker",
+    "Prisma",
+    "Drizzle",
+    "Nginx",
+    "GitHub Actions"
+  ],
+  "Libraries & Tools": [
+    "Zustand",
     "Redux Toolkit",
-    "Tailwind CSS",
-    "shadcn/ui",
     "Zod",
-    "HTML Canvas",
-    "motion.dev"
-  ],
-  "Backend": [
-    "Node.js",
-    "Express.js",
-    "JWT",
-    "Bcrypt",
-    "Google OAuth",
-    "Echo (Go)"
-  ],
-  "DevOps": ["Docker", "GitHub Actions (CI/CD)", "Vercel"],
-  "Databases, ORMs & Tools": ["PostgreSQL", "Prisma", "Drizzle", "Git", "GitHub", "Turborepo", "Bun", "Postman", "VS Code", "Antigravity", "Cursor"]
+    "Tailwind CSS",
+    "motion.dev",
+    "Git",
+    "GitHub",
+    "Postman",
+    "Vercel"
+  ]
 }

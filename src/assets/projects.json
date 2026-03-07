@@ -1,15 +1,27 @@
 [
   {
-    "projectName": "CoBrain",
-    "projectDescription": "CoBrain is your second brain - designed to help you save notes and links, organise it into meaningful slices, and recall information exactly when you need it. It’s simple, flexible, and built to adapt to how you think.",
+    "projectName": "Prompt Playground",
+    "projectDescription": "An advanced AI prompt evaluation and optimization tool designed to enhance the quality of LLM interactions through structured feedback.",
     "projectFeatures": [
-      "Save text notes, important links, tweets, documents, code snippets, and todo lists in one place.",
-      "Divide your brain into slices (categories) and use memos to neatly store and manage related information.",
-      "Keep your brain private or share specific slices with anyone using a simple link.",
-      "Update, delete, or add new brains to a slice whenever your knowledge evolves.",
-      "Instant, context-aware slice descriptions powered by Gemini."
+      "Analyzes system prompts for clarity, specificity, and actionability using LangChain and Gemini API.",
+      "Generates structured evaluations and actionable suggestions for prompt improvement.",
+      "Interactive interface for real-time prompt testing and refinement."
     ],
-    "techStack": ["Next.js", "Express.js", "LangChain", "Drizzle", "PostgreSQL", "Git", "Github", "Vercel", "TypeScript", "Turborepo", "Bun", "Motion", "Tailwind CSS", "Passport JS", "Google OAuth"],
+    "techStack": ["Next.js", "LangChain", "Gemini API", "TypeScript", "Tailwind CSS"],
+    "deployed": true,
+    "link": "https://promptplay.dhanush.tech/",
+    "video": "#",
+    "repo": "https://github.com/dhanushd-27/PromptPlayground"
+  },
+  {
+    "projectName": "CoBrain",
+    "projectDescription": "A robust personal knowledge management platform for organizing notes, links, and documents into shareable, context-aware collections.",
+    "projectFeatures": [
+      "Streamlined storage for text notes, links, code snippets, and task lists.",
+      "Organize knowledge into 'slices' with tag-based search and Gemini-powered context descriptions.",
+      "Secure sharing features for collaborative knowledge bases via public links."
+    ],
+    "techStack": ["Next.js", "Express.js", "PostgreSQL", "Drizzle", "TypeScript", "Turborepo", "Google OAuth"],
     "deployed": true,
     "link": "https://cobrain.dhanush.tech",
     "video": "#",
@@ -17,14 +29,13 @@
   },
   {
     "projectName": "Stroke",
-    "projectDescription": "A minimal, beautifully designed drawing game where you challenge yourself to draw a perfect circle. Test your precision and share your score with the world!",
+    "projectDescription": "A browser-based precision drawing game that challenges users to draw a perfect circle, utilizing real-time feedback and scoring.",
     "projectFeatures": [
-      "Precision Tracking: Real-time feedback on your drawing accuracy",
-      "Score Calculation: Percentage score based on how close you are to a perfect circle",
-      "Share your results: Easily share your performance on Twitter or copy it to your clipboard",
-      "Minimalist UI: A clean, premium design focused on the drawing experience"
+      "Real-time precision tracking and accuracy feedback.",
+      "Dynamic score calculation based on geometric circle approximation.",
+      "Minimalist, performant UI built for a smooth drawing experience."
     ],
-    "techStack": ["Next.js 15", "React 19", "Tailwind CSS 4", "Turborepo", "Bun", "TypeScript", "Git", "Github", "Vercel"],
+    "techStack": ["Next.js", "Zustand", "TypeScript", "Tailwind CSS", "Canvas API"],
     "deployed": true,
     "link": "https://stroke.dhanush.tech/",
     "video": "#",
@@ -32,73 +43,16 @@
   },
   {
     "projectName": "Civio",
-    "projectDescription": "A Next.js landing page built by re-coding a popular portfolio Framer template.",
+    "projectDescription": "A high-performance landing page architected by re-coding a premium Framer design into a production-ready Next.js application.",
     "projectFeatures": [
-      "Fully responsive architecture",
-      "Interactive Framer Motion animations",
-      "Coded from a free Framer template using modern tech stack",
-      "Deployed on Vercel with Git version control and GitHub for remote storage"
+      "Fully responsive architecture with smooth Framer Motion orchestrations.",
+      "Optimized for SEO and fast page delivery on Vercel.",
+      "Clean, maintainable codebase following modern TypeScript standards."
     ],
-    "techStack": [
-      "Next.js",
-      "TypeScript",
-      "Framer Motion",
-      "Tailwind CSS",
-      "Git",
-      "Github",
-      "Vercel"
-    ],
+    "techStack": ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
     "deployed": true,
     "link": "https://civio.dhanush.tech",
     "video": "#",
     "repo": "https://github.com/dhanushd-27/Civio"
-  },
-  {
-    "projectName": "Milestone X",
-    "projectDescription": "A high-speed, mobile-first implementation of a Framer community template, and hosted on Vercel.",
-    "projectFeatures": [
-      "Mobile-first design approach",
-      "Dynamic scrolling animations",
-      "SEO friendly structure",
-      "Coded from a free Framer template using modern tech stack",
-      "Deployed on Vercel with Git version control and GitHub for remote storage"
-    ],
-    "techStack": [
-      "Next.js",
-      "TypeScript",
-      "Motion",
-      "Tailwind CSS",
-      "Git",
-      "Github",
-      "Vercel"
-    ],
-    "deployed": true,
-    "link": "https://milestonex.dhanush.tech",
-    "video": "#",
-    "repo": "https://github.com/dhanushd-27/MilestoneX"
-  },
-  {
-    "projectName": "Prodio",
-    "projectDescription": "A sleek, responsive landing page ported from a Framer design to Next.js, featuring advanced animations and modern UI standards.",
-    "projectFeatures": [
-      "Modern UI/UX principles",
-      "Reusable layout components",
-      "Fast page loading speeds",
-      "Coded from a free Framer template using modern tech stack",
-      "Deployed on Vercel with Git version control and GitHub for remote storage"
-    ],
-    "techStack": [
-      "Next.js",
-      "TypeScript",
-      "Framer Motion",
-      "Tailwind",
-      "Git",
-      "Github",
-      "Vercel"
-    ],
-    "deployed": true,
-    "link": "https://prodio.dhanush.tech",
-    "video": "#",
-    "repo": "https://github.com/dhanushd-27/Prodio"
   }
 ]

@@ -1,48 +1,52 @@
 [
   {
+    "company": "Zentor",
+    "location": "Remote",
+    "role": "Full Stack Developer",
+    "period": "Feb 2026 – Present",
+    "skills": ["Next.js", "TypeScript", "Radix UI", "Prisma", "PostgreSQL", "Resend"],
+    "shortDescription": "Building a comprehensive internal order management dashboard and optimizing core platform features for administrative scalability.",
+    "bulletPoints": [
+      "Designed and implemented an internal order management dashboard using Next.js and Radix UI, enabling unified management of purchase orders, dispatches, clients, items, and logistics.",
+      "Architected database schema updates and managed relational tables with Prisma ORM, powering data-driven features through optimized Next.js API routes.",
+      "Enhanced core platform functionality including image carousels, marketing banners, and wellness layouts, while optimizing transactional communication using Resend."
+    ]
+  },
+  {
     "company": "Team Shiksha",
     "location": "Remote",
     "role": "Full Stack Contributor",
-    "period": "June 2025 – Present",
-    "skills": [
-      "Docker", 
-      "Go", 
-      "PostgreSQL", 
-      "jackc/pgx",  
-      "CI/CD"
-    ],
-    "shortDescription": "Volunteering as an full-stack contributor focusing on backend scalability, containerization, and enhancing platform functionality and developer experience.",
+    "period": "Jun 2025 – Feb 2026",
+    "skills": ["Docker", "Go", "PostgreSQL", "GitHub Actions", "CI/CD"],
+    "shortDescription": "Engineered backend scalability and standardized development environments through containerization and automated pipelines.",
     "bulletPoints": [
-      "Built a GitHub Actions CI pipeline running backend tests and linting, frontend build checks, SQLC and migration validation, with caching and enforced success gates across production branches.",
-      "Integrated PostgreSQL support into the Go backend by implementing the ‘jackc/pgx‘ driver, including the configuration of connection pooling for optimized performance and resource management.",
-      "Containerized the PostgreSQL database using the lightweight ‘postgres:alpine‘ image and Docker Compose, ensuring a consistent and reproducible development environment for all contributors.",
-      "Authored a development-focused Dockerfile for the Go backend and orchestrated its build within a multi-container application using Docker Compose."
+      "Built a robust GitHub Actions CI pipeline automating backend tests, frontend builds, SQLC validation, and migration checks with enforced success gates.",
+      "Integrated PostgreSQL support using the pgx driver and connection pooling to optimize resource management and backend performance.",
+      "Standardized contributor development environments by containerizing PostgreSQL and the Go backend using Docker and Docker Compose."
     ]
   },
   {
     "company": "Sereno Volante",
     "location": "Remote",
     "role": "Frontend Developer",
-    "period": "Sept 2025 – Nov 2025",
-    "skills": ["React.js", "Tailwind", "Typescript", "motion.dev", "Git", "Github", "Team Collaboration"],
-    "shortDescription": "Built full-stack applied AI features and responsive e-commerce solutions for client brands.",
+    "period": "Sep 2025 – Nov 2025",
+    "skills": ["React.js", "TypeScript", "Applied AI", "motion.dev", "Voice Interaction"],
+    "shortDescription": "Developed full-stack applied AI features and responsive frontend proof-of-concepts for client brands.",
     "bulletPoints": [
-      "Implemented a multilingual and voice interaction feature on the client’s website, leveraging ‘react-media-recorder‘ and ‘react-audio-visualizer‘ to enable audio recording, visualization, and playback on the frontend, while transmitting recordings as Base64-encoded ‘.wav‘ files to the backend.",
-      "Developed a proof-of-concept (POC) for an e-commerce platform by making the application fully responsive and enhancing UI elements, including color palette adjustments and interactive hover effects, improving overall user experience.",
-      "Built a second POC to display scraped ads data in a card-based layout with a filtering navbar, enabling users to filter ads by attributes such as last seen, company name, and format."
+      "Implemented multilingual voice interaction features using react-media-recorder and electronic visualization, enabling seamless audio capture and Base64 transmission to backend services.",
+      "Engineered responsive ecommerce interfaces and interactive data visualization dashboards for scraped advertising data with advanced filtering capabilities."
     ]
   },
   {
     "company": "Sereno Volante",
     "location": "Remote",
     "role": "Frontend Developer Intern",
-    "period": "July 2025 – Aug 2025",
-    "skills": ["React.js", "Javascript", "motion.dev", "Tailwind"],
-    "shortDescription": "Engineered UI revamps and integrated interactive frontend features for high-performance web applications.",
+    "period": "Jul 2025 – Aug 2025",
+    "skills": ["React.js", "Tailwind CSS", "TypeScript", "API Integration"],
+    "shortDescription": "Revamped production web applications and resolved critical performance/sync bugs.",
     "bulletPoints": [
-      "Collaborated directly with a UI/UX designer and the client to engineer a complete revamp of a web application, translating new designs into responsive components using React.js and Tailwind CSS.",
-      "Developed and integrated key frontend features, including a chatbot response loader using motion.dev, while managing asynchronous API calls with React hooks to ensure seamless data flow.",
-      "Engineered a solution for a critical bug that was preventing user feedback from being saved, after investigating a client complaint and identifying the root cause as a faulty API call."
+      "Collaborated with UI/UX designers to revamp a production web application into responsive React components using Tailwind CSS.",
+      "Identified and resolved critical API bugs affecting user feedback persistence, ensuring data integrity and improving user XP."
     ]
   }
 ]

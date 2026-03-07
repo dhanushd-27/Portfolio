@@ -1,4 +1,3 @@
-import React from "react";
 import Age from "./age";
 
 export default function Headline() {

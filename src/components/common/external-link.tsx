@@ -5,7 +5,10 @@ import { cn } from "@/lib/utils";
 interface ExternalLinkProps extends React.ComponentPropsWithoutRef<
   typeof Link
 > {
+  href: string;
   label: string;
+  className?: string;
+  children?: React.ReactNode;
 }
 
 export default function ExternalLink({
