@@ -25,7 +25,7 @@ export default function Description() {
         <span className="text-text-primary font-medium">
           Next.js, TypeScript, and Prisma
         </span>
-        , and I'm specialized in building AI-driven tools using{" "}
+        , and I&apos;m specialized in building AI-driven tools using{" "}
         <span className="text-text-primary font-medium">
           LangChain and Gemini API
         </span>

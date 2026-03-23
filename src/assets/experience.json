@@ -9,7 +9,7 @@
     "bulletPoints": [
       "Designed and implemented an internal order management dashboard using Next.js and Radix UI, enabling unified management of purchase orders, dispatches, clients, items, and logistics.",
       "Architected database schema updates and managed relational tables with Prisma ORM, powering data-driven features through optimized Next.js API routes.",
-      "Enhanced core platform functionality including image carousels, marketing banners, and wellness layouts, while optimizing transactional communication using Resend."
+      "Using Next.js and SWR Caching, I have implemented faster data fetches and persistent caching of the data."
     ]
   },
   {

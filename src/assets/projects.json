@@ -9,9 +9,9 @@
     ],
     "techStack": ["Next.js", "LangChain", "Gemini API", "TypeScript", "Tailwind CSS"],
     "deployed": true,
-    "link": "https://promptplay.dhanush.tech/",
+    "link": "https://promptplay.dhanush.codes/",
     "video": "#",
-    "repo": "https://github.com/dhanushd-27/PromptPlayground"
+    "repo": "https://github.com/dhanushdotcodes/PromptPlayground"
   },
   {
     "projectName": "CoBrain",
@@ -23,9 +23,9 @@
     ],
     "techStack": ["Next.js", "Express.js", "PostgreSQL", "Drizzle", "TypeScript", "Turborepo", "Google OAuth"],
     "deployed": true,
-    "link": "https://cobrain.dhanush.tech",
+    "link": "https://cobrain.dhanush.codes",
     "video": "#",
-    "repo": "https://github.com/dhanushd-27/cobrain"
+    "repo": "https://github.com/dhanushdotcodes/cobrain"
   },
   {
     "projectName": "Stroke",
@@ -37,22 +37,8 @@
     ],
     "techStack": ["Next.js", "Zustand", "TypeScript", "Tailwind CSS", "Canvas API"],
     "deployed": true,
-    "link": "https://stroke.dhanush.tech/",
+    "link": "https://stroke.dhanush.codes/",
     "video": "#",
-    "repo": "https://github.com/dhanushd-27/Stroke"
-  },
-  {
-    "projectName": "Civio",
-    "projectDescription": "A high-performance landing page architected by re-coding a premium Framer design into a production-ready Next.js application.",
-    "projectFeatures": [
-      "Fully responsive architecture with smooth Framer Motion orchestrations.",
-      "Optimized for SEO and fast page delivery on Vercel.",
-      "Clean, maintainable codebase following modern TypeScript standards."
-    ],
-    "techStack": ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
-    "deployed": true,
-    "link": "https://civio.dhanush.tech",
-    "video": "#",
-    "repo": "https://github.com/dhanushd-27/Civio"
+    "repo": "https://github.com/dhanushdotcodes/Stroke"
   }
 ]
