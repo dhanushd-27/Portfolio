@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://dhanush.tech/sitemap.xml",
+    sitemap: "https://dhanush.codes/sitemap.xml",
   };
 }

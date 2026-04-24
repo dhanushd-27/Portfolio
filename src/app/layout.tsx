@@ -11,7 +11,7 @@ const hankenGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dhanush.tech"),
+  metadataBase: new URL("https://dhanush.codes"),
   title: "Dhanush Draksharapu | Full Stack Developer",
   description:
     "Portfolio of Dhanush Draksharapu (dhanushdotcodes), an Applied AI and Full Stack Developer specializing in Next.js, TypeScript, and AI-powered applications. Previously at Zentor.",
@@ -32,6 +32,10 @@ export const metadata: Metadata = {
     "React Developer",
   ],
   authors: [{ name: "Dhanush Draksharapu", url: "https://dhanush.codes" }],
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: "/",
   },
@@ -74,7 +78,7 @@ export default function RootLayout({
     url: "https://dhanush.codes",
     image: "https://dhanush.codes/preview.png",
     jobTitle: "Applied AI and Full Stack Developer",
-    worksFor: {
+    alumniOf: {
       "@type": "Organization",
       name: "Zentor",
     },
