@@ -7,29 +7,33 @@ export default function Description() {
       <p>
         I build{" "}
         <span className="text-text-primary font-medium">
-          full-stack, AI-powered applications
+          full-stack applications
         </span>{" "}
-        with a strong focus on{" "}
-        <span className="text-text-primary font-medium">Applied AI</span>. I
-        care deeply about architecting scalable systems and clean code.
+        leveraging{" "}
+        <span className="text-text-primary font-medium">AI assisted coding </span>
+        to code and ship projects faster. I focus on building systems that work
+        well and writing clean code.
       </p>
       {/* Previous Experience */}
       <p>
-        Currently, I am a Full Stack Developer at{" "}
-        <span className="text-text-primary font-medium">Zentor</span>, building
-        internal order management systems and optimizing platform features.
+        I am currently{" "}
+        <span className="text-text-primary font-medium">open for work</span>.
+        Previously, I worked at{" "}
+        <span className="text-text-primary font-medium">Zentor</span> as a Full
+        Stack Developer. I built a dashboard to manage orders and helped make
+        the platform run better.
       </p>
       {/* Main Tech Stack */}
       <p>
-        I work most days with{" "}
+        I mostly build with{" "}
         <span className="text-text-primary font-medium">
-          Next.js, TypeScript, and Prisma
+          Next.js and TypeScript
         </span>
-        , and I&apos;m specialized in building AI-driven tools using{" "}
+        . For the backend, I use{" "}
         <span className="text-text-primary font-medium">
-          LangChain and Gemini API
-        </span>
-        .
+          FastAPI, Express, and Prisma
+        </span>{" "}
+        to handle data and build APIs.
       </p>
       {/* Collaboration */}
       <p>

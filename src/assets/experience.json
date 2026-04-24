@@ -3,13 +3,14 @@
     "company": "Zentor",
     "location": "Remote",
     "role": "Full Stack Developer",
-    "period": "Feb 2026 – Present",
-    "skills": ["Next.js", "TypeScript", "Radix UI", "Prisma", "PostgreSQL", "Resend"],
-    "shortDescription": "Building a comprehensive internal order management dashboard and optimizing core platform features for administrative scalability.",
+    "period": "Feb 2026 – Mar 2026",
+    "skills": ["Next.js", "TypeScript", "Radix UI", "Prisma", "PostgreSQL", "Resend", "UploadThing", "Vercel", "Neon DB"],
+    "shortDescription": "Built a scalable internal order management dashboard with advanced inventory, shipment tracking, and invoice lifecycle management, optimizing admin workflows and platform performance.",
     "bulletPoints": [
-      "Designed and implemented an internal order management dashboard using Next.js and Radix UI, enabling unified management of purchase orders, dispatches, clients, items, and logistics.",
-      "Architected database schema updates and managed relational tables with Prisma ORM, powering data-driven features through optimized Next.js API routes.",
-      "Using Next.js and SWR Caching, I have implemented faster data fetches and persistent caching of the data."
+      "Built an internal order management dashboard using Next.js and Radix UI, enabling admins to manage purchase orders, dispatches, clients, inventory, and logistics through a unified interface.",
+      "Architected and extended the backend using Prisma ORM and Next.js API routes, designing relational schemas and implementing scalable CRUD operations for core business workflows.",
+      "Integrated UploadThing for file handling (product images, documents) and implemented invoice lifecycle tracking with payment states (partial/full).",
+      "Developed a shipment tracking module with box-level granularity (dimensions, weight, volumetric weight, item distribution) and improved performance using Next.js SSR and SWR caching."
     ]
   },
   {

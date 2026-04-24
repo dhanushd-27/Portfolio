@@ -1,19 +1,5 @@
 [
   {
-    "projectName": "Prompt Playground",
-    "projectDescription": "An advanced AI prompt evaluation and optimization tool designed to enhance the quality of LLM interactions through structured feedback.",
-    "projectFeatures": [
-      "Analyzes system prompts for clarity, specificity, and actionability using LangChain and Gemini API.",
-      "Generates structured evaluations and actionable suggestions for prompt improvement.",
-      "Interactive interface for real-time prompt testing and refinement."
-    ],
-    "techStack": ["Next.js", "LangChain", "Gemini API", "TypeScript", "Tailwind CSS"],
-    "deployed": true,
-    "link": "https://promptplay.dhanush.codes/",
-    "video": "#",
-    "repo": "https://github.com/dhanushdotcodes/PromptPlayground"
-  },
-  {
     "projectName": "CoBrain",
     "projectDescription": "A robust personal knowledge management platform for organizing notes, links, and documents into shareable, context-aware collections.",
     "projectFeatures": [
@@ -26,6 +12,20 @@
     "link": "https://cobrain.dhanush.codes",
     "video": "#",
     "repo": "https://github.com/dhanushdotcodes/cobrain"
+  },
+    {
+    "projectName": "Prompt Playground",
+    "projectDescription": "An advanced AI prompt evaluation and optimization tool designed to enhance the quality of LLM interactions through structured feedback.",
+    "projectFeatures": [
+      "Analyzes system prompts for clarity, specificity, and actionability using LangChain and Gemini API.",
+      "Generates structured evaluations and actionable suggestions for prompt improvement.",
+      "Interactive interface for real-time prompt testing and refinement."
+    ],
+    "techStack": ["Next.js", "LangChain", "Gemini API", "TypeScript", "Tailwind CSS"],
+    "deployed": true,
+    "link": "https://promptplay.dhanush.codes/",
+    "video": "#",
+    "repo": "https://github.com/dhanushdotcodes/PromptPlayground"
   },
   {
     "projectName": "Stroke",

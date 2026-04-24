@@ -1,6 +1,6 @@
 {
   "Languages": ["TypeScript", "JavaScript", "Python"],
-  "Frameworks": ["Next.js", "React", "Express", "LangChain"],
+  "Frameworks": ["Next.js", "React", "Express", "FastAPI"],
   "Infrastructure": [
     "PostgreSQL",
     "Docker",
@@ -17,7 +17,6 @@
     "motion.dev",
     "Git",
     "GitHub",
-    "Postman",
     "Vercel"
   ]
 }
