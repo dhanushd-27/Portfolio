@@ -12,12 +12,18 @@ const hankenGrotesk = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dhanush.tech"),
-  title: "Dhanush | Applied AI & Full Stack Developer",
+  title: "Dhanush Draksharapu | Full Stack Developer",
   description:
-    "Portfolio of D Dhanush, an Applied AI and Full Stack Developer specializing in Next.js, TypeScript, and AI-powered applications.",
+    "Portfolio of Dhanush Draksharapu (dhanushdotcodes), an Applied AI and Full Stack Developer specializing in Next.js, TypeScript, and AI-powered applications. Previously at Zentor.",
   keywords: [
+    "Dhanush Draksharapu",
     "D Dhanush",
-    "Dhanush",
+    "dhanushdotcodes",
+    "Dhanush Draksharapu Zentor",
+    "Dhanush Draksharapu Linkedin",
+    "Dhanush Draksharapu X",
+    "Dhanush Draksharapu Full Stack Developer",
+    "D Dhanush Full Stack Developer",
     "Applied AI",
     "Full Stack Developer",
     "Next.js Portfolio",
@@ -25,22 +31,22 @@ export const metadata: Metadata = {
     "TypeScript",
     "React Developer",
   ],
-  authors: [{ name: "D Dhanush", url: "https://dhanush.tech" }],
+  authors: [{ name: "Dhanush Draksharapu", url: "https://dhanush.codes" }],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Dhanush | Applied AI & Full Stack Developer",
+    title: "Dhanush Draksharapu | Full Stack Developer",
     description:
-      "Welcome to my portfolio. I build full-stack, AI-powered applications with a focus on Applied AI.",
-    url: "https://dhanush.tech",
-    siteName: "Dhanush's Portfolio",
+      "Welcome to my portfolio. I build full-stack, AI-powered applications with a focus on Applied AI. Discover my projects and experience.",
+    url: "https://dhanush.codes",
+    siteName: "Dhanush Draksharapu Portfolio",
     images: [
       {
-        url: "https://dhanush.tech/preview.png",
+        url: "https://dhanush.codes/preview.png",
         width: 1200,
         height: 630,
-        alt: "Dhanush Portfolio Preview",
+        alt: "Dhanush Draksharapu Portfolio Preview",
       },
     ],
     locale: "en_US",
@@ -48,9 +54,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dhanush | Applied AI & Full Stack Developer",
+    title: "Dhanush Draksharapu | Applied AI & Full Stack Developer",
     description: "Applied AI and Full Stack Developer Portfolio",
-    images: ["https://dhanush.tech/preview.png"],
+    images: ["https://dhanush.codes/preview.png"],
     creator: "@orcatwt",
   },
 };
@@ -63,15 +69,32 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "D Dhanush",
-    url: "https://dhanush.tech",
-    image: "https://dhanush.tech/preview.png",
+    name: "Dhanush Draksharapu",
+    alternateName: "dhanushdotcodes",
+    url: "https://dhanush.codes",
+    image: "https://dhanush.codes/preview.png",
     jobTitle: "Applied AI and Full Stack Developer",
+    worksFor: {
+      "@type": "Organization",
+      name: "Zentor",
+    },
     sameAs: [
-      "https://github.com/dhanushd-27",
-      "https://www.linkedin.com/in/dhanush27/",
-      "https://x.com/orcatwt",
-      "https://peerlist.io/dhanush_d27",
+      "https://github.com/dhanushdotcodes",
+      "https://www.linkedin.com/in/dhanushdotcodes/",
+      "https://x.com/dhanushdotcodes",
+      "https://peerlist.io/dhanushdotcodes",
+    ],
+    knowsAbout: [
+      "Full Stack Development",
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Generative AI",
+      "FastAPI",
+      "Express",
+      "PostgreSQL",
+      "Vercel"
     ],
   };
 
